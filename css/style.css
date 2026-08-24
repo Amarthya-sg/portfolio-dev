@@ -290,11 +290,12 @@ section {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  gap: 0;
 }
 
 .about-copy {
   max-width: 65ch; /* cap prose lines */
+  padding-right: 70px;
 }
 
 .about-copy p {
@@ -316,11 +317,13 @@ section {
 .stack-list {
   display: flex;
   flex-direction: column;
+  border-left: 1px solid var(--border);
+  padding-left: 70px;
 }
 
 .stack-row {
   display: grid;
-  grid-template-columns: 60px 200px 1fr;
+  grid-template-columns: 160px 1fr;
   align-items: center;
   padding: 20px 0;
   gap: 20px;
@@ -653,6 +656,25 @@ section {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .about-copy {
+    padding-right: 0 !important;
+  }
+
+  .stack-list {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+
+  .stack-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    padding: 16px 0 !important;
+  }
+
+  .stack-row .items {
+    text-align: left !important;
   }
 
   .work-item {

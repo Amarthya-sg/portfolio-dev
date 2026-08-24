@@ -827,11 +827,11 @@ section {
 
   /* Hero Section Overrides */
   .hero-center-container {
-    min-height: 84svh !important;
+    min-height: auto !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
-    padding: 110px 28px 60px !important;
+    justify-content: flex-start !important;
+    padding: 64px 28px 24px !important;
     text-align: left !important;
     align-items: flex-start !important;
   }
@@ -842,7 +842,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.18em;
     color: var(--ink);
-    margin-bottom: 26px;
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
     gap: 9px;
@@ -885,7 +885,7 @@ section {
     width: 44px;
     height: 1px;
     background: var(--border-soft);
-    margin: 34px 0 28px;
+    margin: 20px 0 16px;
   }
 
   .hero-motto {
@@ -907,13 +907,13 @@ section {
   }
 
   .hero-meta {
-    display: flex;
-    gap: var(--space-5);
-    margin-top: var(--space-6);
-    padding-top: var(--space-4);
-    border-top: 1px solid var(--border-hairline);
-    width: 100%;
-    justify-content: flex-start;
+    display: flex !important;
+    gap: 20px !important;
+    margin-top: 24px !important;
+    padding-top: 16px !important;
+    border-top: 1px solid var(--border-hairline) !important;
+    width: 100% !important;
+    justify-content: space-between !important;
   }
 
   .hero-meta-item {
@@ -933,31 +933,14 @@ section {
     font-size: 9.5px;
     color: var(--muted-2);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.06em;
     margin-top: 5px;
     display: block;
+    white-space: nowrap !important;
   }
 
   .hero-scroll-cue {
-    position: absolute;
-    bottom: 32px;
-    left: 28px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 9.5px;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: var(--muted-2);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .hero-scroll-cue::after {
-    content: '';
-    width: 1px;
-    height: 20px;
-    background: var(--muted-2);
-    animation: scrollcue 2.2s var(--ease) infinite;
+    display: none !important;
   }
 
   /* About Section overrides */

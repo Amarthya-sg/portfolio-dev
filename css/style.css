@@ -266,6 +266,19 @@ section {
   line-height: 1.6;
 }
 
+/* Tabloid Print Drop Cap */
+.drop-cap-letter {
+  font-family: 'League Gothic', sans-serif !important;
+  font-size: clamp(3.6rem, 8.5vw, 4.8rem) !important;
+  float: left !important;
+  line-height: 0.76 !important;
+  margin-top: 4px !important;
+  margin-right: 8px !important;
+  color: var(--accent) !important;
+  font-weight: normal !important;
+  text-transform: uppercase !important;
+}
+
 /* CENTERED HERO CARD (EDITORIAL REDESIGN) */
 .hero-center-container {
   flex: 1;

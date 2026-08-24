@@ -705,11 +705,6 @@ section {
     display: flex;
   }
 
-  .navlinks-list {
-    display: flex;
-    flex-direction: column;
-  }
-
   .navlinks a {
     font-family: 'Playfair Display', serif !important;
     font-weight: 500 !important;
@@ -726,7 +721,7 @@ section {
     transition: opacity 0.5s var(--ease), transform 0.5s var(--ease), color 0.2s ease !important;
   }
 
-  .navlinks-list a:first-child {
+  .navlinks a:first-of-type {
     padding-top: 0 !important;
   }
 

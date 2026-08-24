@@ -857,7 +857,7 @@ section {
   .hero-center-container .hero-rule { animation-delay: 0.3s; }
   .hero-center-container .hero-motto { animation-delay: 0.4s; }
 
-  .hero-eyebrow, .hero-motto {
+  .hero-eyebrow, .hero-rule, .hero-motto {
     display: none !important;
   }
 
@@ -892,7 +892,7 @@ section {
     margin-bottom: 0 !important;
     white-space: normal !important;
     transform: none !important;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.08) !important;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15) !important;
   }
 
   .hero-name span {
@@ -916,13 +916,7 @@ section {
   }
 
   .hero-rule {
-    display: block !important;
-    width: 60px !important;
-    height: 6px !important;
-    background: var(--ink) !important;
-    margin-top: 24px !important;
-    margin-bottom: 0 !important;
-    border: none !important;
+    display: none !important;
   }
 
   .hero-motto {

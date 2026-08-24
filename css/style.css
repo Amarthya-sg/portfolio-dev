@@ -239,12 +239,12 @@ section {
 
 .hero-name span {
   display: inline-block;
-  transition: transform 0.18s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform-style: preserve-3d;
 }
 
 .hero-name span:not(.space):hover {
-  transform: translateY(-20px) scale(1.15) translateZ(30px);
+  transform: translateY(-20px) scale(1.18) translateZ(35px);
 }
 
 .hero-name::after {
@@ -671,5 +671,46 @@ section {
   
   .navlinks a::after {
     display: none !important;
+  }
+}
+
+/* CUSTOM INVERTING MOUSE CURSOR */
+@media (pointer: fine) {
+  body, a, button, .hero-name span, .contact-links a {
+    cursor: none !important;
+  }
+
+  .custom-cursor {
+    display: block;
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 50% !important;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 99999;
+    opacity: 0;
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                height 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                top 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                left 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.2s ease;
+  }
+
+  .custom-cursor.hover {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: -40px;
+    background: #FFFFFF;
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none;
   }
 }

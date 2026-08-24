@@ -319,10 +319,11 @@ section {
 }
 
 .stack-row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 60px 200px 1fr;
   align-items: center;
   padding: 20px 0;
+  gap: 20px;
 }
 
 .stack-row .num {

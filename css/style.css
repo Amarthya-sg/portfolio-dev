@@ -471,3 +471,10 @@ footer{
     display: block;
   }
 }
+
+/* Hide sections on desktop homepage to support hybrid layout */
+@media (min-width: 901px) {
+  body.home-page section:not(.hero) {
+    display: none;
+  }
+}

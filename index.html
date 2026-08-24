@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/style.css">
 <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class="home-page">
 
 <div class="frame"></div>
 
@@ -58,6 +58,138 @@
   <div class="hero-foot">
     <p>I design and ship multi-agent AI pipelines and the messy infrastructure underneath them — from GDP-compliant document validators to semantic PDF diffing, built on Python, Azure, and a lot of Linux.</p>
     <div class="scroll-cue">Scroll ↓</div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">01 — About</div>
+      <div class="sec-title">Where the systems<br>meet the terminal.</div>
+    </div>
+    <p class="sec-desc">A 2026 AI & Data Science graduate who's most at home debugging a dependency deadlock at 1am and calling it fun.</p>
+  </div>
+  <hr class="thin">
+  <div class="about-grid" style="margin-top:56px;">
+    <div class="about-copy">
+      <p>I'm Amarthya — Glaks to most people — an AI/ML engineer who graduated in 2026 with a B.E. in Artificial Intelligence & Data Science from Bearys Institute of Technology, Mangalore.</p>
+      <p>My work sits at the intersection of applied AI and real infrastructure: agent orchestration, retrieval pipelines, and the serverless plumbing that keeps them running in production. I like problems that involve wiring several small, opinionated systems together until they behave like one coherent thing.</p>
+      <p>Outside of work, I run Fedora on bare metal, rice my own desktop, write GNOME extensions to fix hardware Lenovo — sorry, HP — didn't bother to, and occasionally build wireless gamepad firmware for fun.</p>
+    </div>
+    <div class="stack-list">
+      <div class="stack-row">
+        <span class="num">01</span>
+        <span class="name">Languages</span>
+        <span class="items">Python, C++, Kotlin, Bash</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">02</span>
+        <span class="name">AI / ML</span>
+        <span class="items">Google ADK, LiteLLM, RAG, multi-agent orchestration</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">03</span>
+        <span class="name">Cloud</span>
+        <span class="items">Azure Functions, Key Vault, serverless workflows</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">04</span>
+        <span class="name">Data</span>
+        <span class="items">MySQL, MongoDB, pandas</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">05</span>
+        <span class="name">Systems</span>
+        <span class="items">Linux (Fedora), Docker, Distrobox, Qt6</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">02 — Selected work</div>
+      <div class="sec-title">Systems I've built<br>and shipped.</div>
+    </div>
+    <p class="sec-desc">A working set — production pipelines, developer tools, and the odd hardware hack.</p>
+  </div>
+
+  <div class="work-list">
+    <div class="work-item">
+      <div class="work-idx">01</div>
+      <div class="work-name">GDP document validator<span>6-agent pipeline</span></div>
+      <div class="work-desc">A six-agent system that validates pharmaceutical GDP documents end to end — routing, cross-checking, and flagging compliance gaps without a human in the loop for the first pass.</div>
+      <div class="work-tags"><span>Python</span><span>multi-agent</span><span>Azure</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">02</div>
+      <div class="work-name">Semantic PDF diffing<span>AI-powered document tool</span></div>
+      <div class="work-desc">A diffing engine that compares document revisions by meaning, not just text position — surfacing substantive changes buried inside reformatted or reflowed pages.</div>
+      <div class="work-tags"><span>NLP</span><span>PDF</span><span>Python</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">03</div>
+      <div class="work-name">Copilot Studio chatbot<span>Topic-routed assistant</span></div>
+      <div class="work-desc">A custom Microsoft Copilot Studio bot with topic routing and knowledge grounding, built to hand off cleanly between scoped conversation flows.</div>
+      <div class="work-tags"><span>Copilot Studio</span><span>knowledge grounding</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">04</div>
+      <div class="work-name">AIRstix<span>Wireless gamepad system</span></div>
+      <div class="work-desc">An Android wireless gamepad app in Kotlin/Jetpack Compose, paired with a C++/Qt6 Linux server — with a full PRD covering connection flow, analog stick containment, and per-button haptics.</div>
+      <div class="work-tags"><span>Kotlin</span><span>Qt6</span><span>C++</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">05</div>
+      <div class="work-name">GNOME fan-control extension<span>Thermal management fix</span></div>
+      <div class="work-desc">A GNOME Shell extension using hp-wmi and pwm1_enable to manage GPU thermals on an HP Victus after diagnosing a shutdown caused by a dead fan sensor.</div>
+      <div class="work-tags"><span>GNOME Shell</span><span>Linux</span><span>hardware</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">03 — Experience</div>
+      <div class="sec-title">Recent roles.</div>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-top">
+      <div class="exp-role">Software Engineering Intern<br><span class="exp-org">Mresult</span></div>
+      <div class="exp-date">Jan 2025 — Jul 2026</div>
+    </div>
+    <ul class="exp-list">
+      <li>Built a six-agent document validation system for GDP compliance workflows.</li>
+      <li>Developed an AI-powered semantic PDF diffing tool for revision comparison.</li>
+      <li>Designed a custom Microsoft Copilot Studio chatbot with topic routing.</li>
+      <li>Implemented serverless AI workflows on Azure Functions and Key Vault.</li>
+    </ul>
+  </div>
+
+  <div class="edu-strip" style="margin-top:56px;">
+    <div class="edu-block">
+      <h4>B.E. — Artificial Intelligence &amp; Data Science</h4>
+      <p>Bearys Institute of Technology, Mangalore (VTU) — 2026</p>
+    </div>
+    <div class="edu-block">
+      <h4>Software Engineering Internship</h4>
+      <p>Edutainer / PAT Technologies — Feb – May 2026</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-wrap">
+  <div class="sec-tag">04 — Contact</div>
+  <div class="contact-title">Let's build the<br><span class="it">next agent</span> together.</div>
+  <div class="contact-links">
+    <a href="mailto:hello@glaks.dev" class="primary">Email me ↗</a>
+    <a href="#">LinkedIn ↗</a>
+    <a href="#">GitHub ↗</a>
+    <a href="#">Resume ↓</a>
   </div>
 </section>
 

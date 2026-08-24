@@ -674,22 +674,18 @@ section {
   }
 }
 
-/* CUSTOM INVERTING MOUSE CURSOR */
+/* CUSTOM TRAILING MOUSE EFFECT */
 @media (pointer: fine) {
-  body, a, button, .hero-name span, .contact-links a {
-    cursor: none !important;
-  }
-
   .custom-cursor {
     display: block;
     position: fixed;
-    top: -20px;
-    left: -20px;
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
+    top: -16px;
+    left: -16px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--ink);
+    background: transparent;
     border-radius: 50% !important;
-    mix-blend-mode: difference;
     pointer-events: none;
     z-index: 99999;
     opacity: 0;
@@ -697,15 +693,16 @@ section {
                 height 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
                 top 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
                 left 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                background 0.25s ease,
                 opacity 0.2s ease;
   }
 
   .custom-cursor.hover {
-    width: 80px;
-    height: 80px;
-    top: -40px;
-    left: -40px;
-    background: #FFFFFF;
+    width: 56px;
+    height: 56px;
+    top: -28px;
+    left: -28px;
+    background: rgba(10, 10, 10, 0.04);
   }
 }
 

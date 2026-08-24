@@ -1307,24 +1307,24 @@ section {
   }
   
   .bottom-nav-card {
-    border: 1px solid var(--border-soft);
-    background: var(--paper-alt);
+    border: 2px solid var(--ink) !important;
+    background: var(--paper) !important;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 110px;
-    transition: background-color 0.2s ease;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    box-shadow: 5px 5px 0px var(--ink) !important;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+    border-radius: 0px !important;
+    text-align: center;
   }
   
   .bottom-nav-card:active {
-    background: var(--border-hairline);
-  }
-  
-  .bottom-nav-card .num {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--muted-2);
+    transform: translate(3px, 3px) !important;
+    box-shadow: 2px 2px 0px var(--ink) !important;
+    background: var(--paper-alt) !important;
   }
   
   .bottom-nav-card .title {
@@ -1332,7 +1332,7 @@ section {
     font-weight: 500;
     font-size: 16px;
     color: var(--ink);
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   /* Mobile footer spacing */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Glaks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div class="frame"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>GLAKS</a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get in touch</a>
+    <button class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<section id="work">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">02 — Selected work</div>
+      <div class="sec-title">Systems I've built<br>and shipped.</div>
+    </div>
+    <p class="sec-desc">A working set — production pipelines, developer tools, and the odd hardware hack.</p>
+  </div>
+
+  <div class="work-list">
+    <div class="work-item">
+      <div class="work-idx">01</div>
+      <div class="work-name">GDP document validator<span>6-agent pipeline</span></div>
+      <div class="work-desc">A six-agent system that validates pharmaceutical GDP documents end to end — routing, cross-checking, and flagging compliance gaps without a human in the loop for the first pass.</div>
+      <div class="work-tags"><span>Python</span><span>multi-agent</span><span>Azure</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">02</div>
+      <div class="work-name">Semantic PDF diffing<span>AI-powered document tool</span></div>
+      <div class="work-desc">A diffing engine that compares document revisions by meaning, not just text position — surfacing substantive changes buried inside reformatted or reflowed pages.</div>
+      <div class="work-tags"><span>NLP</span><span>PDF</span><span>Python</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">03</div>
+      <div class="work-name">Copilot Studio chatbot<span>Topic-routed assistant</span></div>
+      <div class="work-desc">A custom Microsoft Copilot Studio bot with topic routing and knowledge grounding, built to hand off cleanly between scoped conversation flows.</div>
+      <div class="work-tags"><span>Copilot Studio</span><span>knowledge grounding</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">04</div>
+      <div class="work-name">AIRstix<span>Wireless gamepad system</span></div>
+      <div class="work-desc">An Android wireless gamepad app in Kotlin/Jetpack Compose, paired with a C++/Qt6 Linux server — with a full PRD covering connection flow, analog stick containment, and per-button haptics.</div>
+      <div class="work-tags"><span>Kotlin</span><span>Qt6</span><span>C++</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">05</div>
+      <div class="work-name">GNOME fan-control extension<span>Thermal management fix</span></div>
+      <div class="work-desc">A GNOME Shell extension using hp-wmi and pwm1_enable to manage GPU thermals on an HP Victus after diagnosing a shutdown caused by a dead fan sensor.</div>
+      <div class="work-tags"><span>GNOME Shell</span><span>Linux</span><span>hardware</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Amarthya S. George</span>
+  <span>Mangaluru, Karnataka</span>
+</footer>
+
+</body>
+</html>

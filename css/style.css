@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
   --ink: #0A0A0A;
@@ -64,13 +64,9 @@ a {
   padding: 0 60px;
 }
 
-/* Structural outer frame */
+/* Structural outer frame (Removed) */
 .frame {
-  position: fixed;
-  inset: 16px;
-  border: 1px solid var(--border);
-  pointer-events: none;
-  z-index: 90;
+  display: none;
 }
 
 /* HEADER & NAVIGATION */
@@ -79,7 +75,6 @@ header {
   top: 0;
   z-index: 80;
   background: var(--paper);
-  border-bottom: 2px solid var(--border);
 }
 
 nav {
@@ -216,7 +211,6 @@ section {
   margin-bottom: 56px;
   gap: 24px;
   flex-wrap: wrap;
-  border-bottom: 2px solid var(--border);
   padding-bottom: 16px;
 }
 
@@ -230,9 +224,9 @@ section {
 }
 
 .sec-title {
-  font-family: 'Anton', sans-serif;
-  font-size: clamp(1.75rem, 4vw, 3rem);
-  letter-spacing: -0.01em;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
@@ -256,10 +250,10 @@ section {
 }
 
 .hero-name {
-  font-family: 'Anton', sans-serif;
-  font-size: clamp(2.5rem, 10vw, 8rem);
-  line-height: 1.0;
-  letter-spacing: -0.03em;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 11vw, 9rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--ink);
   margin-bottom: 24px;
@@ -294,12 +288,12 @@ section {
 }
 
 .about-copy p:first-child {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 1.6;
-  font-family: 'Anton', sans-serif;
+  line-height: 1.4;
+  font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
 }
 
 .stack-list {
@@ -312,15 +306,6 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.stack-row:first-child {
-  border-top: 2px solid var(--border);
-}
-
-.stack-row:last-child {
-  border-bottom: 2px solid var(--border);
 }
 
 .stack-row .num {
@@ -331,9 +316,10 @@ section {
 }
 
 .stack-row .name {
-  font-family: 'Anton', sans-serif;
-  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .stack-row .items {
@@ -347,6 +333,7 @@ section {
 .work-list {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .work-item {
@@ -354,17 +341,8 @@ section {
   grid-template-columns: auto 1.5fr 2fr 1fr;
   gap: 40px;
   align-items: center;
-  padding: 36px 20px;
-  border-bottom: 1px solid var(--border);
+  padding: 24px 20px;
   transition: background 0.15s ease-out, color 0.15s ease-out;
-}
-
-.work-item:first-child {
-  border-top: 2px solid var(--border);
-}
-
-.work-item:last-child {
-  border-bottom: 2px solid var(--border);
 }
 
 /* Signature Monochrome Instant Inversion on Hover */
@@ -388,9 +366,10 @@ section {
 }
 
 .work-name {
-  font-family: 'Anton', sans-serif;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
   text-transform: uppercase;
+  letter-spacing: 0.02em;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -438,7 +417,6 @@ section {
 
 /* EXPERIENCE SECTION */
 .exp-card {
-  border: 2px solid var(--border);
   background: var(--paper-alt);
   padding: 40px;
   margin-bottom: 40px;
@@ -449,14 +427,14 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 24px;
-  border-bottom: 1px solid var(--border);
   padding-bottom: 16px;
 }
 
 .exp-role {
-  font-family: 'Anton', sans-serif;
-  font-size: 22px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
   line-height: 1.3;
 }
 
@@ -498,14 +476,14 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  border-top: 2px solid var(--border);
   padding-top: 40px;
 }
 
 .edu-block h4 {
-  font-family: 'Anton', sans-serif;
-  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
@@ -530,9 +508,10 @@ section {
 }
 
 .contact-title {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(2.25rem, 8vw, 7rem);
-  line-height: 1.0;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   max-width: 850px;
   margin: 0 auto 56px;
@@ -551,7 +530,6 @@ section {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  border-bottom: 2px solid var(--border);
   padding: 8px 12px;
   transition: background 0.15s ease, color 0.15s ease;
 }
@@ -565,7 +543,6 @@ section {
 /* FOOTER */
 footer {
   padding: 26px 60px;
-  border-top: 1px solid var(--border-hairline);
   display: flex;
   justify-content: space-between;
   font-family: 'IBM Plex Mono', monospace;
@@ -583,7 +560,7 @@ footer {
   }
   
   .frame {
-    inset: 10px;
+    display: none;
   }
 
   /* Full-Screen Mobile Takover Navigation Menu */

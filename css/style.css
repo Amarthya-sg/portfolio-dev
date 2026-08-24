@@ -33,6 +33,10 @@ body {
   position: relative;
 }
 
+.mobile-only-section {
+  display: none;
+}
+
 /* High-density print film grain texture overlay (9% opacity) */
 body::before {
   content: "";
@@ -570,9 +574,27 @@ section {
 
 /* RESPONSIVE OVERRIDES */
 @media (max-width: 900px) {
-  nav, .hero, section {
+  nav, .hero, section, .mobile-only-section {
     padding-left: 32px !important;
     padding-right: 32px !important;
+  }
+
+  .mobile-only-section {
+    display: block !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    border-bottom: 1px solid var(--border-hairline);
+  }
+
+  .mobile-only-section:last-of-type {
+    border-bottom: none;
+  }
+
+  .hero-center-container {
+    height: auto !important;
+    min-height: 75vh !important;
+    padding-top: 120px !important;
+    padding-bottom: 80px !important;
   }
   
   .frame {

@@ -269,11 +269,11 @@ section {
 /* Tabloid Print Drop Cap */
 .drop-cap-letter {
   font-family: 'League Gothic', sans-serif !important;
-  font-size: clamp(3.6rem, 8.5vw, 4.8rem) !important;
+  font-size: clamp(4.4rem, 11vw, 5.8rem) !important;
   float: left !important;
-  line-height: 0.76 !important;
-  margin-top: 4px !important;
-  margin-right: 8px !important;
+  line-height: 0.7 !important;
+  margin-top: 0px !important;
+  margin-right: 4px !important;
   color: var(--accent) !important;
   font-weight: normal !important;
   text-transform: uppercase !important;
@@ -1232,10 +1232,9 @@ section {
 
   .work-item {
     display: block !important;
-    padding: 32px 0 !important;
+    padding: 20px 0 !important;
     border-top: 1px solid var(--border-hairline) !important;
     position: relative !important;
-    transition: padding-left 0.3s var(--ease), background-color 0.3s var(--ease) !important;
     grid-template-columns: none !important;
     background: transparent !important;
     color: var(--ink) !important;
@@ -1251,17 +1250,16 @@ section {
   }
 
   .work-item:active {
-    padding-left: 12px !important;
-    background: var(--paper-alt) !important;
+    background: transparent !important;
   }
 
   .work-idx {
     font-family: 'IBM Plex Mono', monospace !important;
-    font-size: 10.5px !important;
-    color: var(--muted-2) !important;
+    font-size: 11px !important;
+    color: var(--muted) !important;
     letter-spacing: 0.06em !important;
     display: block !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 2px !important;
   }
 
   .work-name {
@@ -1270,7 +1268,7 @@ section {
     font-size: 26px !important;
     letter-spacing: 0.02em !important;
     line-height: 1.0 !important;
-    margin-bottom: 14px !important;
+    margin-bottom: 8px !important;
     text-transform: uppercase !important;
     display: flex !important;
     flex-direction: column !important;
@@ -1292,7 +1290,7 @@ section {
     line-height: 1.55 !important;
     color: var(--ink) !important;
     max-width: 56ch !important;
-    margin-bottom: 18px !important;
+    margin-bottom: 12px !important;
     font-weight: 400 !important;
   }
 
@@ -1308,15 +1306,18 @@ section {
   }
 
   .work-tags span {
-    border: 1px solid var(--ink) !important;
-    background-color: var(--ink) !important;
-    color: var(--paper) !important;
-    padding: 5px 10px !important;
+    border: none !important;
+    background-color: transparent !important;
+    color: var(--ink) !important;
+    padding: 0 !important;
     font-weight: 500 !important;
   }
 
-  .work-tags span::after {
-    content: none !important;
+  .work-tags span:not(:last-child)::after {
+    content: " ·" !important;
+    margin-left: 8px !important;
+    color: var(--accent) !important;
+    display: inline-block !important;
   }
 
   /* Experience Section Overrides */

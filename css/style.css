@@ -1296,8 +1296,8 @@ section {
   
   .short-about.mobile-only-element {
     display: block !important;
-    margin-top: 48px;
-    padding: 48px 28px 0 !important;
+    margin-top: 12px;
+    padding: 12px 28px 0 !important;
     border-top: 1px solid var(--border-hairline);
     width: 100%;
     box-sizing: border-box !important;

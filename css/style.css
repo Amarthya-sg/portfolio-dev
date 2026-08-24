@@ -857,7 +857,7 @@ section {
   .hero-center-container .hero-rule { animation-delay: 0.3s; }
   .hero-center-container .hero-motto { animation-delay: 0.4s; }
 
-  .hero-eyebrow, .hero-rule, .hero-motto {
+  .hero-eyebrow, .hero-motto {
     display: none !important;
   }
 
@@ -898,6 +898,14 @@ section {
   .hero-name span {
     transform: none !important;
   }
+  
+  .hero-name .word {
+    display: block !important;
+  }
+  
+  .hero-name .space {
+    display: none !important;
+  }
 
   .hero-name span:hover {
     transform: none !important;
@@ -908,10 +916,13 @@ section {
   }
 
   .hero-rule {
-    width: 44px;
-    height: 1px;
-    background: var(--border-soft);
-    margin: 20px 0 16px;
+    display: block !important;
+    width: 60px !important;
+    height: 6px !important;
+    background: var(--ink) !important;
+    margin-top: 24px !important;
+    margin-bottom: 0 !important;
+    border: none !important;
   }
 
   .hero-motto {

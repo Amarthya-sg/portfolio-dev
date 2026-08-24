@@ -144,6 +144,9 @@ nav{
   height:440px;
   display:flex;align-items:center;justify-content:center;
 }
+.pipeline-flow{
+  display:none;
+}
 .core{
   width:230px;height:230px;border-radius:50%;
   background:var(--accent);
@@ -390,6 +393,87 @@ footer{
     font-size:24px;
   }
   .frame{display:none;}
+
+  /* Hide the 3D rotating circle orbit on mobile viewports */
+  .orbit-stage {
+    display: none !important;
+  }
+
+  /* Show and style the dynamic vertical multi-agent pipeline card */
+  .pipeline-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 40px auto;
+    max-width: 320px;
+    width: 100%;
+    position: relative;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--paper-dim);
+  }
+
+  .flow-node {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 24px;
+    padding: 8px 16px;
+    width: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    box-shadow: 0 4px 6px -1px rgba(20,20,18,0.02);
+    position: relative;
+    z-index: 2;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .flow-node .pip {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-node .pip.pulse {
+    animation: pip-glow 2s infinite ease-in-out;
+  }
+
+  .node-title {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .node-desc {
+    margin-left: auto;
+    color: var(--stone);
+    font-size: 9.5px;
+  }
+
+  .flow-line {
+    width: 1px;
+    height: 24px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--line),
+      var(--line) 4px,
+      transparent 4px,
+      transparent 8px
+    );
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes pip-glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(232, 84, 46, 0.4); background: var(--accent); }
+    50% { box-shadow: 0 0 0 6px rgba(232, 84, 46, 0); background: #ff744f; }
+  }
 }
 
 /* VIEW TRANSITIONS */

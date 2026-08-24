@@ -53,6 +53,38 @@
       <div class="agent-node" style="--radius:215px; animation-duration:30s; animation-direction:reverse;"><span class="pip"></span>diff engine</div>
       <div class="agent-node" style="--radius:215px; animation-duration:30s; animation-direction:reverse; animation-delay:-15s;"><span class="pip"></span>chat orchestrator</div>
     </div>
+
+    <div class="pipeline-flow" aria-label="Multi-agent pipeline structure">
+      <div class="flow-node">
+        <span class="pip pulse"></span>
+        <span class="node-title">retriever</span>
+        <span class="node-desc">RAG &amp; Vector Search</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">router</span>
+        <span class="node-desc">Topic Dialog Routing</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">chat orchestrator</span>
+        <span class="node-desc">Multi-Agent Control</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">diff engine</span>
+        <span class="node-desc">Semantic PDF Revision</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">validator</span>
+        <span class="node-desc">GDP Compliance Check</span>
+      </div>
+    </div>
   </div>
 
   <div class="hero-foot">

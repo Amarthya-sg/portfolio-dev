@@ -175,4 +175,19 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(attachHovers, 50);
     });
   }
+
+  // Mobile pipeline node pulse sequencer
+  const flowNodes = document.querySelectorAll('.flow-node');
+  if (flowNodes.length > 0) {
+    let activeIndex = 0;
+    setInterval(() => {
+      const currentPip = flowNodes[activeIndex].querySelector('.pip');
+      if (currentPip) currentPip.classList.remove('pulse');
+      
+      activeIndex = (activeIndex + 1) % flowNodes.length;
+      
+      const nextPip = flowNodes[activeIndex].querySelector('.pip');
+      if (nextPip) nextPip.classList.add('pulse');
+    }, 2500);
+  }
 });

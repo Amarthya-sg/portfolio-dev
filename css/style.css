@@ -882,17 +882,17 @@ section {
   }
 
   .hero-name {
-    font-family: 'Playfair Display', serif !important;
-    font-weight: 500 !important;
-    font-size: clamp(2.6rem, 11.5vw, 4rem) !important;
-    line-height: 1.08 !important;
-    letter-spacing: -0.01em !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: clamp(3.2rem, 15vw, 5.5rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: 0.02em !important;
     color: var(--ink) !important;
-    text-transform: none !important;
+    text-transform: uppercase !important;
     margin-bottom: 0 !important;
     white-space: normal !important;
     transform: none !important;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.12) !important;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.08) !important;
   }
 
   .hero-name span {

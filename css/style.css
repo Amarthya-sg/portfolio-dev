@@ -208,6 +208,13 @@ section {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+}
+
+.sec-title:hover {
+  transform: translateY(-8px) scale(1.02);
 }
 
 .sec-desc {
@@ -525,6 +532,13 @@ section {
   text-transform: uppercase;
   max-width: 850px;
   margin: 0 auto 56px;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+}
+
+.contact-title:hover {
+  transform: translateY(-12px) scale(1.02);
 }
 
 .contact-links {

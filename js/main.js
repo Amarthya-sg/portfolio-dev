@@ -79,13 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event delegation for hover states
     document.addEventListener('mouseover', (e) => {
-      if (e.target.closest('a, button, .hero-name span, .contact-links a')) {
+      if (e.target.closest('a, button, .hero-name span, .contact-links a, .sec-title, .contact-title')) {
         cursor.classList.add('hover');
       }
     });
 
     document.addEventListener('mouseout', (e) => {
-      if (e.target.closest('a, button, .hero-name span, .contact-links a')) {
+      if (e.target.closest('a, button, .hero-name span, .contact-links a, .sec-title, .contact-title')) {
         cursor.classList.remove('hover');
       }
     });

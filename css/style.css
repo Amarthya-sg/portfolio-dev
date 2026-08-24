@@ -279,14 +279,11 @@ section {
 }
 
 .hero-card {
-  border: 2px solid var(--ink);
-  background-color: var(--paper);
   padding: 48px;
   max-width: 860px;
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 10px 10px 0px rgba(10, 10, 10, 0.04);
 }
 
 /* Rotated Ink Stamp */
@@ -373,15 +370,15 @@ section {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--paper);
-  background-color: var(--ink);
-  padding: 5px 12px;
+  color: var(--ink);
   font-weight: 500;
-  transition: transform 0.2s ease;
 }
 
-.hero-chips span:hover {
-  transform: translateY(-2px);
+.hero-chips span:not(:last-child)::after {
+  content: " ·";
+  margin-left: 10px;
+  color: var(--accent);
+  display: inline-block;
 }
 
 /* Column layout for biography & CTAs */
@@ -421,46 +418,52 @@ section {
 
 /* Dashboard Grid for Coupons */
 .bottom-nav-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .bottom-nav-card {
-  border: 1px dashed var(--ink) !important;
-  background-color: var(--paper) !important;
-  padding: 14px 10px !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 14px 0 !important;
+  border-bottom: 1px solid var(--ink) !important;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 52px !important;
+  text-align: left;
+  min-height: auto !important;
   height: auto !important;
-  text-align: center;
-  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.bottom-nav-card:first-child {
+  border-top: 1px solid var(--ink) !important;
 }
 
 .bottom-nav-card .title {
   font-family: 'IBM Plex Mono', monospace !important;
-  font-weight: 500 !important;
-  font-size: 11px !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   color: var(--ink);
   white-space: nowrap !important;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .bottom-nav-card:hover {
-  background-color: var(--ink) !important;
-  border-style: solid !important;
-  transform: translateY(-2px);
+  background-color: transparent !important;
+  transform: translateX(4px);
 }
 
 .bottom-nav-card:hover .title {
-  color: var(--paper) !important;
+  color: var(--accent) !important;
 }
 
 .bottom-nav-card:active {
-  transform: scale(0.97);
+  transform: scale(0.98);
 }
 
 /* ABOUT SECTION */
@@ -615,9 +618,10 @@ section {
 
 /* EXPERIENCE SECTION */
 .exp-card {
-  background: var(--paper-alt);
-  padding: 40px;
-  margin-bottom: 40px;
+  background: transparent;
+  border-top: 1px solid var(--ink);
+  padding: 28px 0 0 0;
+  margin-bottom: 48px;
 }
 
 .exp-top {
@@ -1289,10 +1293,11 @@ section {
 
   /* Experience Section Overrides */
   .exp-card {
-    border: 1px solid var(--border-soft) !important;
-    padding: 30px 26px !important;
-    margin-bottom: 22px !important;
-    background: var(--paper-alt) !important;
+    background: transparent !important;
+    border: none !important;
+    border-top: 1px solid var(--ink) !important;
+    padding: 20px 0 0 0 !important;
+    margin-bottom: 32px !important;
   }
 
   .exp-top {
@@ -1302,7 +1307,7 @@ section {
     align-items: flex-start !important;
     margin-bottom: 22px !important;
     padding-bottom: 20px !important;
-    border-bottom: 1px solid var(--border-soft) !important;
+    border-bottom: 1px solid var(--border-hairline) !important;
     gap: 16px !important;
   }
 

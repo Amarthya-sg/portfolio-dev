@@ -1,0 +1,1387 @@
+Directory structure:
+└── PORTFOLIO/
+    ├── README.md
+    ├── about.html
+    ├── contact.html
+    ├── experience.html
+    ├── index.html
+    ├── work.html
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── main.js
+
+================================================
+FILE: README.md
+================================================
+# portfolio-dev
+
+
+
+================================================
+FILE: about.html
+================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Glaks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div class="frame"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>GLAKS</a>
+    <div class="navlinks">
+      <a href="about.html" class="active">About</a>
+      <a href="work.html">Work</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta-mobile">Get in touch</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get in touch</a>
+    <button class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<section id="about">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">01 — About</div>
+      <div class="sec-title">Where the systems<br>meet the terminal.</div>
+    </div>
+    <p class="sec-desc">A 2026 AI & Data Science graduate who's most at home debugging a dependency deadlock at 1am and calling it fun.</p>
+  </div>
+  <hr class="thin">
+  <div class="about-grid" style="margin-top:56px;">
+    <div class="about-copy">
+      <p>I'm Amarthya — Glaks to most people — an AI/ML engineer who graduated in 2026 with a B.E. in Artificial Intelligence & Data Science from Bearys Institute of Technology, Mangalore.</p>
+      <p>My work sits at the intersection of applied AI and real infrastructure: agent orchestration, retrieval pipelines, and the serverless plumbing that keeps them running in production. I like problems that involve wiring several small, opinionated systems together until they behave like one coherent thing.</p>
+      <p>Outside of work, I run Fedora on bare metal, rice my own desktop, write GNOME extensions to fix hardware Lenovo — sorry, HP — didn't bother to, and occasionally build wireless gamepad firmware for fun.</p>
+    </div>
+    <div class="stack-list">
+      <div class="stack-row">
+        <span class="num">01</span>
+        <span class="name">Languages</span>
+        <span class="items">Python, C++, Kotlin, Bash</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">02</span>
+        <span class="name">AI / ML</span>
+        <span class="items">Google ADK, LiteLLM, RAG, multi-agent orchestration</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">03</span>
+        <span class="name">Cloud</span>
+        <span class="items">Azure Functions, Key Vault, serverless workflows</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">04</span>
+        <span class="name">Data</span>
+        <span class="items">MySQL, MongoDB, pandas</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">05</span>
+        <span class="name">Systems</span>
+        <span class="items">Linux (Fedora), Docker, Distrobox, Qt6</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Amarthya S. George</span>
+  <span>Mangaluru, Karnataka</span>
+</footer>
+
+</body>
+</html>
+
+
+
+================================================
+FILE: contact.html
+================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Glaks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div class="frame"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>GLAKS</a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta-mobile">Get in touch</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get in touch</a>
+    <button class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<section id="contact" class="contact-wrap">
+  <div class="sec-tag">04 — Contact</div>
+  <div class="contact-title">Let's build the<br><span class="it">next agent</span> together.</div>
+  <div class="contact-links">
+    <a href="mailto:hello@glaks.dev" class="primary">Email me ↗</a>
+    <a href="#">LinkedIn ↗</a>
+    <a href="#">GitHub ↗</a>
+    <a href="#">Resume ↓</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Amarthya S. George</span>
+  <span>Mangaluru, Karnataka</span>
+</footer>
+
+</body>
+</html>
+
+
+
+================================================
+FILE: experience.html
+================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Glaks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div class="frame"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>GLAKS</a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta-mobile">Get in touch</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get in touch</a>
+    <button class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<section id="experience">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">03 — Experience</div>
+      <div class="sec-title">Recent roles.</div>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-top">
+      <div class="exp-role">Software Engineering Intern<br><span class="exp-org">Mresult</span></div>
+      <div class="exp-date">Jan 2025 — Jul 2026</div>
+    </div>
+    <ul class="exp-list">
+      <li>Built a six-agent document validation system for GDP compliance workflows.</li>
+      <li>Developed an AI-powered semantic PDF diffing tool for revision comparison.</li>
+      <li>Designed a custom Microsoft Copilot Studio chatbot with topic routing.</li>
+      <li>Implemented serverless AI workflows on Azure Functions and Key Vault.</li>
+    </ul>
+  </div>
+
+  <div class="edu-strip" style="margin-top:56px;">
+    <div class="edu-block">
+      <h4>B.E. — Artificial Intelligence &amp; Data Science</h4>
+      <p>Bearys Institute of Technology, Mangalore (VTU) — 2026</p>
+    </div>
+    <div class="edu-block">
+      <h4>Software Engineering Internship</h4>
+      <p>Edutainer / PAT Technologies — Feb – May 2026</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Amarthya S. George</span>
+  <span>Mangaluru, Karnataka</span>
+</footer>
+
+</body>
+</html>
+
+
+
+================================================
+FILE: index.html
+================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glaks — AI/ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body class="home-page">
+
+<div class="frame"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>GLAKS</a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta-mobile">Get in touch</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get in touch</a>
+    <button class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow"><span class="rule"></span> Portfolio — 2026</div>
+  <div class="hero-grid">
+    <!-- Column 1: Left Vertical Navigation -->
+    <div class="hero-nav-col">
+      <a href="about.html" class="hero-nav-item">
+        <span class="num">01</span>
+        <span class="label">About</span>
+      </a>
+      <a href="work.html" class="hero-nav-item">
+        <span class="num">02</span>
+        <span class="label">Work</span>
+      </a>
+      <a href="experience.html" class="hero-nav-item">
+        <span class="num">03</span>
+        <span class="label">Experience</span>
+      </a>
+      <a href="contact.html" class="hero-nav-item">
+        <span class="num">04</span>
+        <span class="label">Contact</span>
+      </a>
+    </div>
+
+    <!-- Column 2: Center Giant Circle with Satellites -->
+    <div class="hero-center-col">
+      <div class="giant-circle" aria-hidden="true">
+        <div class="circle-core-label"></div>
+        <div class="orbit-stage-inner">
+          <div class="agent-node">validator</div>
+          <div class="agent-node">retriever</div>
+          <div class="agent-node">router</div>
+          <div class="agent-node">diff engine</div>
+          <div class="agent-node">chat orchestrator</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 3: Right Editorial Typography and Description -->
+    <div class="hero-right-col">
+      <div class="hero-content-wrap">
+        <div class="hero-title-prefix">AI/ML Engineer</div>
+        <h2>Amarthya S.<br>George</h2>
+        <p class="hero-desc">I design and ship multi-agent AI pipelines and the serverless infrastructure underneath them — from GDP-compliant document validators to semantic PDF diffing.</p>
+        <a href="work.html" class="hero-explore-link">Explore Selected Work ➔</a>
+      </div>
+    </div>
+
+    <!-- Mobile-Only Pipeline Flow (CSS hides on desktop) -->
+    <div class="pipeline-flow" aria-label="Multi-agent pipeline structure">
+      <div class="flow-node">
+        <span class="pip pulse"></span>
+        <span class="node-title">retriever</span>
+        <span class="node-desc">RAG &amp; Vector Search</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">router</span>
+        <span class="node-desc">Topic Dialog Routing</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">chat orchestrator</span>
+        <span class="node-desc">Multi-Agent Control</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">diff engine</span>
+        <span class="node-desc">Semantic PDF Revision</span>
+      </div>
+      <div class="flow-line"></div>
+      <div class="flow-node">
+        <span class="pip"></span>
+        <span class="node-title">validator</span>
+        <span class="node-desc">GDP Compliance Check</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="scroll-cue">Scroll ↓</div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">01 — About</div>
+      <div class="sec-title">Where the systems<br>meet the terminal.</div>
+    </div>
+    <p class="sec-desc">A 2026 AI & Data Science graduate who's most at home debugging a dependency deadlock at 1am and calling it fun.</p>
+  </div>
+  <hr class="thin">
+  <div class="about-grid" style="margin-top:56px;">
+    <div class="about-copy">
+      <p>I'm Amarthya — Glaks to most people — an AI/ML engineer who graduated in 2026 with a B.E. in Artificial Intelligence & Data Science from Bearys Institute of Technology, Mangalore.</p>
+      <p>My work sits at the intersection of applied AI and real infrastructure: agent orchestration, retrieval pipelines, and the serverless plumbing that keeps them running in production. I like problems that involve wiring several small, opinionated systems together until they behave like one coherent thing.</p>
+      <p>Outside of work, I run Fedora on bare metal, rice my own desktop, write GNOME extensions to fix hardware Lenovo — sorry, HP — didn't bother to, and occasionally build wireless gamepad firmware for fun.</p>
+    </div>
+    <div class="stack-list">
+      <div class="stack-row">
+        <span class="num">01</span>
+        <span class="name">Languages</span>
+        <span class="items">Python, C++, Kotlin, Bash</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">02</span>
+        <span class="name">AI / ML</span>
+        <span class="items">Google ADK, LiteLLM, RAG, multi-agent orchestration</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">03</span>
+        <span class="name">Cloud</span>
+        <span class="items">Azure Functions, Key Vault, serverless workflows</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">04</span>
+        <span class="name">Data</span>
+        <span class="items">MySQL, MongoDB, pandas</span>
+      </div>
+      <div class="stack-row">
+        <span class="num">05</span>
+        <span class="name">Systems</span>
+        <span class="items">Linux (Fedora), Docker, Distrobox, Qt6</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">02 — Selected work</div>
+      <div class="sec-title">Systems I've built<br>and shipped.</div>
+    </div>
+    <p class="sec-desc">A working set — production pipelines, developer tools, and the odd hardware hack.</p>
+  </div>
+
+  <div class="work-list">
+    <div class="work-item">
+      <div class="work-idx">01</div>
+      <div class="work-name">GDP document validator<span>6-agent pipeline</span></div>
+      <div class="work-desc">A six-agent system that validates pharmaceutical GDP documents end to end — routing, cross-checking, and flagging compliance gaps without a human in the loop for the first pass.</div>
+      <div class="work-tags"><span>Python</span><span>multi-agent</span><span>Azure</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">02</div>
+      <div class="work-name">Semantic PDF diffing<span>AI-powered document tool</span></div>
+      <div class="work-desc">A diffing engine that compares document revisions by meaning, not just text position — surfacing substantive changes buried inside reformatted or reflowed pages.</div>
+      <div class="work-tags"><span>NLP</span><span>PDF</span><span>Python</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">03</div>
+      <div class="work-name">Copilot Studio chatbot<span>Topic-routed assistant</span></div>
+      <div class="work-desc">A custom Microsoft Copilot Studio bot with topic routing and knowledge grounding, built to hand off cleanly between scoped conversation flows.</div>
+      <div class="work-tags"><span>Copilot Studio</span><span>knowledge grounding</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">04</div>
+      <div class="work-name">AIRstix<span>Wireless gamepad system</span></div>
+      <div class="work-desc">An Android wireless gamepad app in Kotlin/Jetpack Compose, paired with a C++/Qt6 Linux server — with a full PRD covering connection flow, analog stick containment, and per-button haptics.</div>
+      <div class="work-tags"><span>Kotlin</span><span>Qt6</span><span>C++</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">05</div>
+      <div class="work-name">GNOME fan-control extension<span>Thermal management fix</span></div>
+      <div class="work-desc">A GNOME Shell extension using hp-wmi and pwm1_enable to manage GPU thermals on an HP Victus after diagnosing a shutdown caused by a dead fan sensor.</div>
+      <div class="work-tags"><span>GNOME Shell</span><span>Linux</span><span>hardware</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">03 — Experience</div>
+      <div class="sec-title">Recent roles.</div>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-top">
+      <div class="exp-role">Software Engineering Intern<br><span class="exp-org">Mresult</span></div>
+      <div class="exp-date">Jan 2025 — Jul 2026</div>
+    </div>
+    <ul class="exp-list">
+      <li>Built a six-agent document validation system for GDP compliance workflows.</li>
+      <li>Developed an AI-powered semantic PDF diffing tool for revision comparison.</li>
+      <li>Designed a custom Microsoft Copilot Studio chatbot with topic routing.</li>
+      <li>Implemented serverless AI workflows on Azure Functions and Key Vault.</li>
+    </ul>
+  </div>
+
+  <div class="edu-strip" style="margin-top:56px;">
+    <div class="edu-block">
+      <h4>B.E. — Artificial Intelligence &amp; Data Science</h4>
+      <p>Bearys Institute of Technology, Mangalore (VTU) — 2026</p>
+    </div>
+    <div class="edu-block">
+      <h4>Software Engineering Internship</h4>
+      <p>Edutainer / PAT Technologies — Feb – May 2026</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-wrap">
+  <div class="sec-tag">04 — Contact</div>
+  <div class="contact-title">Let's build the<br><span class="it">next agent</span> together.</div>
+  <div class="contact-links">
+    <a href="mailto:hello@glaks.dev" class="primary">Email me ↗</a>
+    <a href="#">LinkedIn ↗</a>
+    <a href="#">GitHub ↗</a>
+    <a href="#">Resume ↓</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Amarthya S. George</span>
+  <span>Mangaluru, Karnataka</span>
+</footer>
+
+</body>
+</html>
+
+
+
+================================================
+FILE: work.html
+================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Glaks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div class="frame"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>GLAKS</a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta-mobile">Get in touch</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get in touch</a>
+    <button class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<section id="work">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag">02 — Selected work</div>
+      <div class="sec-title">Systems I've built<br>and shipped.</div>
+    </div>
+    <p class="sec-desc">A working set — production pipelines, developer tools, and the odd hardware hack.</p>
+  </div>
+
+  <div class="work-list">
+    <div class="work-item">
+      <div class="work-idx">01</div>
+      <div class="work-name">GDP document validator<span>6-agent pipeline</span></div>
+      <div class="work-desc">A six-agent system that validates pharmaceutical GDP documents end to end — routing, cross-checking, and flagging compliance gaps without a human in the loop for the first pass.</div>
+      <div class="work-tags"><span>Python</span><span>multi-agent</span><span>Azure</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">02</div>
+      <div class="work-name">Semantic PDF diffing<span>AI-powered document tool</span></div>
+      <div class="work-desc">A diffing engine that compares document revisions by meaning, not just text position — surfacing substantive changes buried inside reformatted or reflowed pages.</div>
+      <div class="work-tags"><span>NLP</span><span>PDF</span><span>Python</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">03</div>
+      <div class="work-name">Copilot Studio chatbot<span>Topic-routed assistant</span></div>
+      <div class="work-desc">A custom Microsoft Copilot Studio bot with topic routing and knowledge grounding, built to hand off cleanly between scoped conversation flows.</div>
+      <div class="work-tags"><span>Copilot Studio</span><span>knowledge grounding</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">04</div>
+      <div class="work-name">AIRstix<span>Wireless gamepad system</span></div>
+      <div class="work-desc">An Android wireless gamepad app in Kotlin/Jetpack Compose, paired with a C++/Qt6 Linux server — with a full PRD covering connection flow, analog stick containment, and per-button haptics.</div>
+      <div class="work-tags"><span>Kotlin</span><span>Qt6</span><span>C++</span></div>
+    </div>
+    <div class="work-item">
+      <div class="work-idx">05</div>
+      <div class="work-name">GNOME fan-control extension<span>Thermal management fix</span></div>
+      <div class="work-desc">A GNOME Shell extension using hp-wmi and pwm1_enable to manage GPU thermals on an HP Victus after diagnosing a shutdown caused by a dead fan sensor.</div>
+      <div class="work-tags"><span>GNOME Shell</span><span>Linux</span><span>hardware</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Amarthya S. George</span>
+  <span>Mangaluru, Karnataka</span>
+</footer>
+
+</body>
+</html>
+
+
+
+================================================
+FILE: css/style.css
+================================================
+:root{
+  --paper:#F3F1EA;
+  --paper-dim:#EAE7DD;
+  --ink:#141412;
+  --ink-soft:#3A3833;
+  --stone:#8B8578;
+  --accent:#E8542E;
+  --accent-dim:#F7DACE;
+  --line:#D8D3C5;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background-color:var(--paper);
+  background-image:radial-gradient(var(--line) 1.2px, transparent 1.2px);
+  background-size:24px 24px;
+  color:var(--ink);
+  font-family:'Space Grotesk',sans-serif;
+  overflow-x:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+::selection{background:var(--accent);color:var(--paper);}
+
+a{color:inherit;text-decoration:none;}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px;}
+
+/* corner marks like the reference screenshot */
+.frame{
+  position:fixed;inset:16px;
+  border:1px solid var(--line);
+  pointer-events:none;
+  z-index:5;
+}
+.frame::before,.frame::after{
+  content:'';position:absolute;width:14px;height:14px;
+}
+
+/* NAV */
+header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(243,241,234,0.86);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+nav{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  padding:22px 40px;max-width:1180px;margin:0 auto;
+  position:relative;
+}
+.logo{
+  grid-column:2;
+  justify-self:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:14px;font-weight:500;
+  display:flex;align-items:center;gap:8px;
+}
+.navlinks{
+  grid-column:1;
+  justify-self:start;
+}
+.nav-cta{
+  grid-column:3;
+  justify-self:end;
+}
+.menu-btn{
+  grid-column:3;
+  justify-self:end;
+}
+.logo .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;}
+.navlinks{display:flex;gap:36px;align-items:center;}
+.navlinks a{
+  font-size:13px;letter-spacing:0.03em;color:var(--ink-soft);
+  position:relative;padding-bottom:2px;
+}
+.navlinks a:hover{color:var(--ink);}
+.navlinks a::after{
+  content:'';position:absolute;left:0;bottom:-4px;width:0;height:1px;
+  background:var(--accent);transition:width .25s ease;
+}
+.navlinks a:hover::after{width:100%;}
+.navlinks a.active{color:var(--ink);}
+.navlinks a.active::after{width:100%;}
+.nav-cta{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;border:1px solid var(--ink);
+  padding:9px 16px;border-radius:2px;
+  transition:background .2s ease,color .2s ease;
+}
+.nav-cta:hover{background:var(--ink);color:var(--paper);}
+.menu-btn{
+  display:none;background:none;border:none;
+  font-size:22px;cursor:pointer;color:var(--ink);
+  padding:4px 8px;line-height:1;
+}
+.nav-cta-mobile{
+  display:none;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  padding:40px 40px;
+  max-width:1180px;margin:0 auto;
+  min-height:calc(100vh - 160px);
+}
+.eyebrow{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;color:var(--stone);
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:26px;
+  letter-spacing:0.02em;
+}
+.eyebrow .rule{width:36px;height:1px;background:var(--stone);}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1.6fr 1.4fr;
+  align-items:center;
+  gap:40px;
+  min-height:480px;
+  position:relative;
+}
+.pipeline-flow{
+  display:none;
+}
+
+.hero-nav-col{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+  justify-content:center;
+}
+.hero-nav-item{
+  font-family:'Space Grotesk',sans-serif;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  opacity:0.4;
+  text-decoration:none;
+  color:var(--ink);
+  transition:opacity 0.25s ease;
+  width:fit-content;
+}
+.hero-nav-item:hover, .hero-nav-item.active{
+  opacity:1;
+}
+.hero-nav-item:hover .label{
+  color:var(--accent);
+}
+.hero-nav-item .num{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  color:var(--stone);
+}
+.hero-nav-item .label{
+  font-size:16px;
+  font-weight:500;
+  letter-spacing:-0.01em;
+}
+.hero-nav-item.active .label{
+  position:relative;
+}
+.hero-nav-item.active .label::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:24px;
+  height:1.5px;
+  background:var(--accent);
+}
+
+.hero-center-col{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.giant-circle{
+  width:clamp(220px, 20vw, 300px);
+  height:clamp(220px, 20vw, 300px);
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 10px 30px -10px rgba(232, 84, 46, 0.15);
+  transition:transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.giant-circle:hover{
+  transform:scale(1.03);
+}
+
+.hero-right-col{
+  display:flex;
+  align-items:center;
+}
+.hero-content-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+.hero-title-prefix{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  color:var(--stone);
+  margin-bottom:12px;
+}
+.hero-content-wrap h2{
+  font-family:'Fraunces',serif;
+  font-weight:500;
+  font-size:clamp(34px, 3.4vw, 48px);
+  line-height:1.06;
+  color:var(--ink);
+  margin-bottom:24px;
+}
+.hero-desc{
+  font-size:14px;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-bottom:28px;
+  max-width:320px;
+}
+.hero-explore-link{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  font-weight:600;
+  color:var(--ink);
+  text-decoration:none;
+  border-bottom:1.5px solid var(--accent);
+  padding-bottom:3px;
+  transition:color 0.2s ease,border-color 0.2s ease;
+}
+.hero-explore-link:hover{
+  color:var(--accent);
+  border-color:var(--ink);
+}
+
+.hero-foot{
+  margin-top:auto;
+  display:flex;justify-content:flex-end;
+  padding-top:20px;
+}
+.scroll-cue{
+  font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--stone);
+  display:flex;align-items:center;gap:8px;
+}
+
+/* SECTIONS shared */
+section{
+  padding:80px 40px;
+  max-width:1180px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.sec-head{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  margin-bottom:56px;gap:24px;flex-wrap:wrap;
+}
+.sec-tag{
+  font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);
+  margin-bottom:10px;letter-spacing:0.02em;
+}
+.sec-title{
+  font-family:'Fraunces',serif;font-weight:500;
+  font-size:clamp(28px,3.4vw,42px);letter-spacing:-0.01em;
+}
+.sec-desc{max-width:320px;font-size:14px;color:var(--stone);line-height:1.6;}
+
+hr.thin{border:none;border-top:1px solid var(--line);}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:70px;}
+.about-copy p{font-size:16.5px;line-height:1.85;color:var(--ink-soft);margin-bottom:20px;}
+.about-copy p:first-child{
+  font-family:'Fraunces',serif;font-size:22px;color:var(--ink);line-height:1.55;font-weight:400;
+}
+.stack-list{display:flex;flex-direction:column;}
+.stack-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 0;border-bottom:1px solid var(--line);
+}
+.stack-row:first-child{border-top:1px solid var(--line);}
+.stack-row .num{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--stone);}
+.stack-row .name{font-family:'Fraunces',serif;font-size:19px;}
+.stack-row .items{font-size:12.5px;color:var(--stone);text-align:right;max-width:280px;}
+
+/* WORK */
+.work-list{display:flex;flex-direction:column;}
+.work-item{
+  border-top:1px solid var(--line);
+  padding:34px 0;
+  display:grid;grid-template-columns:60px 1.1fr 1.4fr 110px;
+  gap:28px;align-items:start;
+  cursor:default;
+  transition:background .2s ease;
+}
+.work-item:last-child{border-bottom:1px solid var(--line);}
+.work-item:hover{background:rgba(20,20,18,0.02);}
+.work-idx{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--stone);padding-top:6px;}
+.work-name{font-family:'Fraunces',serif;font-size:24px;line-height:1.2;padding-right:10px;}
+.work-name span{display:block;font-family:'Space Grotesk',sans-serif;font-size:12.5px;color:var(--accent);margin-top:8px;font-weight:500;}
+.work-desc{font-size:14px;color:var(--ink-soft);line-height:1.7;padding-top:4px;}
+.work-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;padding-top:6px;}
+.work-tags span{
+  font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--stone);
+  border:1px solid var(--line);padding:3px 8px;border-radius:20px;white-space:nowrap;
+}
+
+/* EXPERIENCE */
+.exp-card{
+  border:1px solid var(--line);border-radius:4px;padding:40px;
+  background:var(--paper-dim);
+}
+.exp-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px;flex-wrap:wrap;gap:14px;}
+.exp-role{font-family:'Fraunces',serif;font-size:26px;}
+.exp-org{color:var(--accent);font-weight:500;}
+.exp-date{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--stone);white-space:nowrap;}
+.exp-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;margin-top:18px;}
+.exp-list li{
+  list-style:none;font-size:14px;color:var(--ink-soft);line-height:1.6;
+  padding-left:18px;position:relative;
+}
+.exp-list li::before{
+  content:'';position:absolute;left:0;top:9px;width:6px;height:1px;background:var(--accent);
+}
+
+/* EDUCATION strip */
+.edu-strip{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;padding-top:10px;}
+.edu-block h4{font-family:'Fraunces',serif;font-size:19px;font-weight:500;margin-bottom:6px;}
+.edu-block p{font-size:13px;color:var(--stone);}
+
+/* CONTACT */
+.contact-wrap{
+  text-align:center;padding:130px 40px;
+  border-top:1px solid var(--line);
+}
+.contact-wrap .sec-tag{justify-content:center;display:flex;}
+.contact-title{
+  font-family:'Fraunces',serif;font-weight:500;
+  font-size:clamp(34px,6vw,72px);letter-spacing:-0.01em;line-height:1.05;
+  max-width:820px;margin:0 auto 40px;
+}
+.contact-title .it{font-style:italic;color:var(--accent);font-weight:400;}
+.contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+.contact-links a{
+  font-family:'JetBrains Mono',monospace;font-size:13px;
+  border:1px solid var(--ink);padding:12px 22px;border-radius:2px;
+  transition:background .2s ease,color .2s ease;
+}
+.contact-links a.primary{background:var(--ink);color:var(--paper);}
+.contact-links a.primary:hover{background:var(--accent);border-color:var(--accent);}
+.contact-links a:not(.primary):hover{background:var(--ink);color:var(--paper);}
+
+footer{
+  padding:26px 40px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;
+  font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--stone);
+  max-width:1180px;margin:0 auto;
+}
+
+@media(max-width:900px){
+  .hero-grid{
+    grid-template-columns: 1fr;
+    gap: 24px;
+    min-height: auto;
+  }
+  .hero-nav-col, .hero-center-col {
+    display: none !important;
+  }
+  .hero-right-col {
+    width: 100%;
+  }
+  .hero-content-wrap {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-desc {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  .about-grid{grid-template-columns:1fr;gap:40px;}
+  .work-item{grid-template-columns:1fr;gap:10px;}
+  .work-tags{justify-content:flex-start;}
+  .exp-list{grid-template-columns:1fr;}
+  .nav-cta{
+    display:none;
+  }
+  .navlinks{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:100%;left:0;right:0;
+    background:rgba(243,241,234,0.96);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--line);
+    padding:30px 40px;
+    gap:0;
+    align-items:flex-start;
+    z-index:25;
+    box-shadow:0 10px 15px -3px rgba(20,20,18,0.05);
+  }
+  .navlinks.active{
+    display:flex;
+  }
+  .navlinks a{
+    font-size:18px;
+    font-weight:500;
+    width:100%;
+    padding:14px 0;
+    border-bottom:1px solid rgba(20,20,18,0.05);
+    display:block;
+  }
+  .navlinks a::after{
+    display:none;
+  }
+  .navlinks a:last-of-type{
+    border-bottom:none;
+  }
+  .nav-cta-mobile{
+    display:block;
+    width:100%;
+    text-align:center;
+    border:1.5px solid var(--ink);
+    padding:14px 20px;
+    margin-top:16px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px;
+    font-weight:600;
+    border-radius:2px;
+    background:var(--ink);
+    color:var(--paper);
+    transition:background .2s ease,color .2s ease,border-color .2s ease;
+  }
+  .nav-cta-mobile:hover{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:var(--paper);
+  }
+  .menu-btn{
+    display:block;
+    padding:12px;
+    margin-right:-12px;
+    font-size:24px;
+  }
+  .frame{display:none;}
+
+  /* Hide the 3D rotating circle orbit on mobile viewports */
+  .orbit-stage {
+    display: none !important;
+  }
+
+  /* Show and style the dynamic vertical multi-agent pipeline card */
+  .pipeline-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 40px auto;
+    max-width: 320px;
+    width: 100%;
+    position: relative;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--paper-dim);
+  }
+
+  .flow-node {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 24px;
+    padding: 8px 16px;
+    width: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    box-shadow: 0 4px 6px -1px rgba(20,20,18,0.02);
+    position: relative;
+    z-index: 2;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .flow-node .pip {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flow-node .pip.pulse {
+    animation: pip-glow 2s infinite ease-in-out;
+  }
+
+  .node-title {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .node-desc {
+    margin-left: auto;
+    color: var(--stone);
+    font-size: 9.5px;
+  }
+
+  .flow-line {
+    width: 1px;
+    height: 24px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--line),
+      var(--line) 4px,
+      transparent 4px,
+      transparent 8px
+    );
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes pip-glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(232, 84, 46, 0.4); background: var(--accent); }
+    50% { box-shadow: 0 0 0 6px rgba(232, 84, 46, 0); background: #ff744f; }
+  }
+}
+
+/* VIEW TRANSITIONS */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  /* Keep header static/morphing during transition */
+  header {
+    view-transition-name: main-header;
+  }
+
+  /* Keep footer static/morphing during transition */
+  footer {
+    view-transition-name: main-footer;
+  }
+
+  /* Custom transition: dissolving blur and fade */
+  ::view-transition-old(root) {
+    animation: 0.3s ease-out both dissolve-out;
+  }
+  ::view-transition-new(root) {
+    animation: 0.3s ease-in both dissolve-in;
+  }
+}
+
+@keyframes dissolve-out {
+  from { opacity: 1; filter: blur(0); }
+  to { opacity: 0; filter: blur(4px); }
+}
+
+@keyframes dissolve-in {
+  from { opacity: 0; filter: blur(4px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+/* CUSTOM CURSOR */
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  opacity: 0;
+  display: none;
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent);
+  transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.3s ease;
+}
+.cursor-ring {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--accent);
+  transition: width 0.25s ease, height 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, opacity 0.3s ease;
+}
+
+/* Hover styles */
+.cursor-ring.hovered {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(232, 84, 46, 0.08);
+  border-color: var(--accent);
+}
+.cursor-dot.hovered {
+  transform: scale(1.8);
+  background-color: var(--ink);
+}
+
+@media (pointer: fine) {
+  body, a, button, .agent-node, .nav-cta, .contact-links a {
+    cursor: none;
+  }
+  .cursor-dot, .cursor-ring {
+    display: block;
+  }
+}
+
+/* Hide sections on desktop homepage to support hybrid layout */
+@media (min-width: 901px) {
+  body.home-page section:not(.hero) {
+    display: none;
+  }
+}
+
+
+
+================================================
+FILE: js/main.js
+================================================
+// device redirection layout check (runs immediately on script execution to prevent visual flashing)
+(function checkDeviceLayout() {
+  const isMobile = window.innerWidth < 900;
+  const page = window.location.pathname.split('/').pop() || 'index.html';
+  const hash = window.location.hash;
+
+  if (isMobile) {
+    // Redirect mobile users to homepage hash if visiting separate pages
+    if (page !== 'index.html' && page.endsWith('.html')) {
+      const topic = page.replace('.html', '');
+      window.location.replace(`index.html#${topic}`);
+    }
+  } else {
+    // Redirect desktop users to separate pages if visiting homepage hashes
+    if (page === 'index.html' && hash) {
+      const topic = hash.replace('#', '');
+      const validTopics = ['about', 'work', 'experience', 'contact'];
+      if (validTopics.includes(topic)) {
+        window.location.replace(`${topic}.html`);
+      }
+    }
+  }
+})();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.querySelector('.menu-btn');
+  const navLinks = document.querySelector('.navlinks');
+  const links = navLinks.querySelectorAll('a');
+
+  // Handle menu button toggling
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('active');
+      menuBtn.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+      menuBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          menuBtn.innerHTML = '&#9776;';
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+
+  // Dynamic link rewriting based on viewport size
+  const rewriteLinksForDevice = () => {
+    const isMobile = window.innerWidth < 900;
+    const allLinks = document.querySelectorAll('.navlinks a, .nav-cta, .nav-cta-mobile, .logo');
+
+    allLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      if (isMobile) {
+        // Desktop subpages (.html) -> Mobile hashes (index.html#hash)
+        if (href.endsWith('.html') && href !== 'index.html' && !href.startsWith('index.html')) {
+          const topic = href.replace('.html', '');
+          link.setAttribute('href', `index.html#${topic}`);
+        }
+      } else {
+        // Mobile hashes (index.html#hash) -> Desktop subpages (.html)
+        if (href.includes('index.html#')) {
+          const topic = href.split('#')[1];
+          if (['about', 'work', 'experience', 'contact'].includes(topic)) {
+            link.setAttribute('href', `${topic}.html`);
+          }
+        }
+      }
+    });
+  };
+
+  // Run rewrite links on load and resize
+  rewriteLinksForDevice();
+  window.addEventListener('resize', rewriteLinksForDevice);
+
+
+
+  // Custom Cursor Implementation
+  if (window.matchMedia('(pointer: fine)').matches) {
+    const cursorDot = document.createElement('div');
+    const cursorRing = document.createElement('div');
+    cursorDot.className = 'cursor-dot';
+    cursorRing.className = 'cursor-ring';
+    document.body.appendChild(cursorDot);
+    document.body.appendChild(cursorRing);
+
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+    let hasMoved = false;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      if (!hasMoved) {
+        cursorDot.style.opacity = 1;
+        cursorRing.style.opacity = 1;
+        hasMoved = true;
+      }
+
+      // Dot moves instantly
+      cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+    });
+
+    function animateCursor() {
+      // Lerp for lagging outline follow effect
+      ringX += (mouseX - ringX) * 0.15;
+      ringY += (mouseY - ringY) * 0.15;
+
+      cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Trigger cursor hovers on interactive targets
+    const attachHovers = () => {
+      const interactives = document.querySelectorAll('a, button, .agent-node');
+      interactives.forEach(el => {
+        if (el.dataset.cursorBound) return;
+        el.dataset.cursorBound = 'true';
+
+        el.addEventListener('mouseenter', () => {
+          cursorRing.classList.add('hovered');
+          cursorDot.classList.add('hovered');
+        });
+        el.addEventListener('mouseleave', () => {
+          cursorRing.classList.remove('hovered');
+          cursorDot.classList.remove('hovered');
+        });
+      });
+    };
+
+    attachHovers();
+
+    // Re-attach hovers on document changes (e.g. view transitions)
+    window.addEventListener('pagereveal', () => {
+      setTimeout(attachHovers, 50);
+    });
+  }
+
+  // Mobile pipeline node pulse sequencer
+  const flowNodes = document.querySelectorAll('.flow-node');
+  if (flowNodes.length > 0) {
+    let activeIndex = 0;
+    setInterval(() => {
+      const currentPip = flowNodes[activeIndex].querySelector('.pip');
+      if (currentPip) currentPip.classList.remove('pulse');
+      
+      activeIndex = (activeIndex + 1) % flowNodes.length;
+      
+      const nextPip = flowNodes[activeIndex].querySelector('.pip');
+      if (nextPip) nextPip.classList.add('pulse');
+    }, 2500);
+  }
+});
+
+

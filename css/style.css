@@ -9,6 +9,13 @@
   --line:#D8D3C5;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
+*:focus {
+  outline: none;
+}
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
 html{scroll-behavior:smooth;}
 body{
   background-color:var(--paper);
@@ -83,7 +90,7 @@ nav{
 .logo .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;}
 .navlinks{display:flex;gap:36px;align-items:center;}
 .navlinks a{
-  font-size:13px;letter-spacing:0.03em;color:var(--ink-soft);
+  font-size:15px;letter-spacing:0.03em;color:var(--ink-soft);
   position:relative;padding-bottom:2px;
 }
 .navlinks a:hover{color:var(--ink);}
@@ -227,7 +234,7 @@ nav{
   margin-bottom:24px;
 }
 .hero-desc{
-  font-size:14px;
+  font-size:16px;
   line-height:1.6;
   color:var(--ink-soft);
   margin-bottom:28px;
@@ -624,9 +631,11 @@ footer{
   }
 }
 
-/* Hide sections on desktop homepage to support hybrid layout */
-@media (min-width: 901px) {
-  body.home-page section:not(.hero) {
-    display: none;
+@media (prefers-reduced-motion: reduce) {
+  .cursor-dot, .cursor-ring {
+    display: none !important;
+  }
+  body, a, button, .agent-node, .nav-cta, .contact-links a {
+    cursor: auto !important;
   }
 }

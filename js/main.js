@@ -1,27 +1,3 @@
-// device redirection layout check (runs immediately on script execution to prevent visual flashing)
-(function checkDeviceLayout() {
-  const isMobile = window.innerWidth < 900;
-  const page = window.location.pathname.split('/').pop() || 'index.html';
-  const hash = window.location.hash;
-
-  if (isMobile) {
-    // Redirect mobile users to homepage hash if visiting separate pages
-    if (page !== 'index.html' && page.endsWith('.html')) {
-      const topic = page.replace('.html', '');
-      window.location.replace(`index.html#${topic}`);
-    }
-  } else {
-    // Redirect desktop users to separate pages if visiting homepage hashes
-    if (page === 'index.html' && hash) {
-      const topic = hash.replace('#', '');
-      const validTopics = ['about', 'work', 'experience', 'contact'];
-      if (validTopics.includes(topic)) {
-        window.location.replace(`${topic}.html`);
-      }
-    }
-  }
-})();
-
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.menu-btn');
   const navLinks = document.querySelector('.navlinks');
@@ -46,41 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Dynamic link rewriting based on viewport size
-  const rewriteLinksForDevice = () => {
-    const isMobile = window.innerWidth < 900;
-    const allLinks = document.querySelectorAll('.navlinks a, .nav-cta, .nav-cta-mobile, .logo');
-
-    allLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (!href) return;
-
-      if (isMobile) {
-        // Desktop subpages (.html) -> Mobile hashes (index.html#hash)
-        if (href.endsWith('.html') && href !== 'index.html' && !href.startsWith('index.html')) {
-          const topic = href.replace('.html', '');
-          link.setAttribute('href', `index.html#${topic}`);
-        }
-      } else {
-        // Mobile hashes (index.html#hash) -> Desktop subpages (.html)
-        if (href.includes('index.html#')) {
-          const topic = href.split('#')[1];
-          if (['about', 'work', 'experience', 'contact'].includes(topic)) {
-            link.setAttribute('href', `${topic}.html`);
-          }
-        }
-      }
-    });
-  };
-
-  // Run rewrite links on load and resize
-  rewriteLinksForDevice();
-  window.addEventListener('resize', rewriteLinksForDevice);
-
-
-
-  // Custom Cursor Implementation
-  if (window.matchMedia('(pointer: fine)').matches) {
+  // Custom Cursor Implementation (Skipped entirely if user prefers reduced motion)
+  if (window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const cursorDot = document.createElement('div');
     const cursorRing = document.createElement('div');
     cursorDot.className = 'cursor-dot';

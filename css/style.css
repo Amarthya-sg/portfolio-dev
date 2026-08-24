@@ -1465,9 +1465,7 @@ section {
     box-sizing: border-box !important;
   }
   
-  body.home-page header {
-    display: none !important;
-  }
+
 }
 
 /* REDUCED MOTION OVERRIDES */

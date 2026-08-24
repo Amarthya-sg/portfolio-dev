@@ -826,15 +826,35 @@ section {
   }
 
   /* Hero Section Overrides */
+  @keyframes hero-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .hero-center-container {
     min-height: auto !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: flex-start !important;
-    padding: 64px 28px 24px !important;
+    padding: 20px 28px 12px !important;
     text-align: left !important;
     align-items: flex-start !important;
   }
+
+  .hero-center-container > * {
+    animation: hero-fade-in 0.8s cubic-bezier(0.19, 1, 0.22, 1) both;
+  }
+
+  .hero-center-container .hero-eyebrow { animation-delay: 0.1s; }
+  .hero-center-container .hero-name { animation-delay: 0.2s; }
+  .hero-center-container .hero-rule { animation-delay: 0.3s; }
+  .hero-center-container .hero-motto { animation-delay: 0.4s; }
 
   .hero-eyebrow {
     font-family: 'IBM Plex Mono', monospace;
@@ -1272,8 +1292,8 @@ section {
   
   .short-about.mobile-only-element {
     display: block !important;
-    margin-top: 40px;
-    padding-top: 32px;
+    margin-top: 48px;
+    padding-top: 48px;
     border-top: 1px solid var(--border-hairline);
     width: 100%;
   }
@@ -1283,7 +1303,7 @@ section {
     font-size: 15px;
     line-height: 1.7;
     color: var(--muted);
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     font-weight: 300;
   }
   
@@ -1301,8 +1321,8 @@ section {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    margin-top: 32px;
-    margin-bottom: var(--space-6);
+    margin-top: 48px;
+    margin-bottom: 48px;
     width: 100%;
   }
   
@@ -1321,6 +1341,11 @@ section {
     text-align: center;
   }
   
+  .bottom-nav-card:hover {
+    transform: translate(-2px, -2px) !important;
+    box-shadow: 7px 7px 0px var(--ink) !important;
+  }
+
   .bottom-nav-card:active {
     transform: translate(3px, 3px) !important;
     box-shadow: 2px 2px 0px var(--ink) !important;

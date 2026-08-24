@@ -900,10 +900,18 @@ section {
   }
   
   .hero-name .word {
-    display: block !important;
+    display: inline-block !important;
   }
   
   .hero-name .space {
+    display: inline-block !important;
+  }
+
+  .hero-name .word:nth-child(5) {
+    display: block !important;
+  }
+
+  .hero-name .space:nth-child(4) {
     display: none !important;
   }
 

@@ -691,7 +691,7 @@ section {
   }
 
   .menu-btn[aria-expanded="true"] .menu-line {
-    background-color: var(--paper) !important;
+    background-color: var(--ink) !important;
   }
 
   .menu-btn[aria-expanded="true"] .line-top {
@@ -711,8 +711,8 @@ section {
     inset: 0;
     width: 100vw;
     height: 100dvh;
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--paper);
+    color: var(--ink);
     justify-content: center;
     z-index: 100;
     padding: 32px;
@@ -728,9 +728,9 @@ section {
     font-style: italic !important;
     font-size: clamp(2.1rem, 10vw, 3rem) !important;
     letter-spacing: 0 !important;
-    color: rgba(255, 255, 255, 0.88) !important;
+    color: rgba(10, 10, 10, 0.6) !important;
     padding: 12px 0 !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid var(--border-hairline) !important;
     position: relative !important;
     text-transform: none !important;
     opacity: 0;
@@ -755,18 +755,13 @@ section {
 
   .navlinks a .idx {
     display: none !important;
-    font-family: 'IBM Plex Mono', monospace;
-    font-style: normal;
-    font-size: 11px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.35);
-    vertical-align: super;
-    margin-right: 14px;
-    letter-spacing: 0.05em;
   }
 
   .navlinks a.active {
-    color: var(--paper) !important;
+    color: var(--ink) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 6px !important;
+    text-decoration-thickness: 2px !important;
   }
 
   .nav-footer {
@@ -1449,71 +1444,7 @@ section {
     justify-content: flex-start !important;
     padding: 0 0 32px 0 !important;
     box-sizing: border-box !important;
-    background-color: var(--ink) !important;
-    color: var(--paper) !important;
   }
-  
-  body.home-page .hero-name {
-    color: var(--paper) !important;
-  }
-  
-  body.home-page .hero-chips span {
-    color: var(--paper) !important;
-    background: #1C1C1A !important;
-    border: 1px solid #333330 !important;
-  }
-  
-  body.home-page .hero-eyebrow {
-    color: rgba(250, 250, 247, 0.6) !important;
-  }
-
-  body.home-page .short-about.mobile-only-element {
-    border-top: 1px solid #333330 !important;
-  }
-  
-  body.home-page .short-about p.bio-hook {
-    color: var(--paper) !important;
-  }
-  
-  body.home-page .short-about p.bio-hook strong {
-    color: #FFFFFF !important;
-  }
-  
-  body.home-page .short-about p.bio-detail {
-    color: rgba(250, 250, 247, 0.6) !important;
-  }
-  
-  body.home-page .bottom-nav-card {
-    border: 2px solid var(--paper) !important;
-    background: var(--ink) !important;
-    box-shadow: 5px 5px 0px var(--paper) !important;
-  }
-  
-  body.home-page .bottom-nav-card .title {
-    color: var(--paper) !important;
-  }
-  
-  body.home-page .bottom-nav-card:hover {
-    background-color: var(--paper) !important;
-    border-color: var(--paper) !important;
-    box-shadow: none !important;
-    transform: translateY(-2px) !important;
-  }
-  
-  body.home-page .bottom-nav-card:hover .title {
-    color: var(--ink) !important;
-  }
-  
-  body.home-page .bottom-nav-card:active {
-    transform: scale(0.96) !important;
-    box-shadow: 2px 2px 0px var(--paper) !important;
-    background-color: #1C1C1A !important;
-  }
-
-  body.home-page .menu-btn .menu-line {
-    background-color: var(--paper) !important;
-  }
-}
 
 /* REDUCED MOTION OVERRIDES */
 @media (prefers-reduced-motion: reduce) {

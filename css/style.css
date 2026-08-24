@@ -237,6 +237,16 @@ section {
   transform-style: preserve-3d;
 }
 
+.hero-name span {
+  display: inline-block;
+  transition: transform 0.18s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.hero-name span:not(.space):hover {
+  transform: translateY(-20px) scale(1.15) translateZ(30px);
+}
+
 .hero-name::after {
   content: attr(data-text);
   position: absolute;

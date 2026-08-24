@@ -231,6 +231,7 @@ section {
   text-transform: uppercase;
   color: var(--ink);
   margin-bottom: 24px;
+  text-shadow: 2px 4px 10px rgba(10, 10, 10, 0.12);
 }
 
 .hero-motto {

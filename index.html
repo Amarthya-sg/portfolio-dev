@@ -31,29 +31,51 @@
 <section class="hero">
   <div class="eyebrow"><span class="rule"></span> Portfolio — 2026</div>
   <div class="hero-grid">
-    <div class="hero-left">
-      <h1>Amarthya S. George<span class="who">building agentic AI systems</span></h1>
-      <div class="hero-tags">
-        <span>AI / ML Engineer</span>
-        <span>Multi-agent systems</span>
-        <span>Python</span>
-        <span>Bangalore · Mangalore</span>
+    <!-- Column 1: Left Vertical Navigation -->
+    <div class="hero-nav-col">
+      <a href="about.html" class="hero-nav-item">
+        <span class="num">01</span>
+        <span class="label">About</span>
+      </a>
+      <a href="work.html" class="hero-nav-item">
+        <span class="num">02</span>
+        <span class="label">Work</span>
+      </a>
+      <a href="experience.html" class="hero-nav-item">
+        <span class="num">03</span>
+        <span class="label">Experience</span>
+      </a>
+      <a href="contact.html" class="hero-nav-item">
+        <span class="num">04</span>
+        <span class="label">Contact</span>
+      </a>
+    </div>
+
+    <!-- Column 2: Center Giant Circle with Satellites -->
+    <div class="hero-center-col">
+      <div class="giant-circle" aria-hidden="true">
+        <div class="circle-core-label"></div>
+        <div class="orbit-stage-inner">
+          <div class="agent-node">validator</div>
+          <div class="agent-node">retriever</div>
+          <div class="agent-node">router</div>
+          <div class="agent-node">diff engine</div>
+          <div class="agent-node">chat orchestrator</div>
+        </div>
       </div>
     </div>
 
-    <div class="orbit-stage" aria-hidden="true">
-      <div class="ring r1"></div>
-      <div class="ring r2"></div>
-      <div class="core">
-        <div class="core-label"><b>Glaks</b>AI/ML<br>engineer</div>
+    <!-- Column 3: Right Editorial Typography and Description -->
+    <div class="hero-right-col">
+      <div class="hero-content-wrap">
+        <div class="hero-title-prefix">AI/ML Engineer</div>
+        <h2>Amarthya S.<br>George</h2>
+        <p class="hero-desc">I design and ship multi-agent AI pipelines and the serverless infrastructure underneath them — from GDP-compliant document validators to semantic PDF diffing.</p>
+        <a href="work.html" class="hero-explore-link">Explore Selected Work ➔</a>
       </div>
-      <div class="agent-node" style="--radius:165px; animation-duration:22s;"><span class="pip"></span>validator</div>
-      <div class="agent-node" style="--radius:165px; animation-duration:22s; animation-delay:-7.3s;"><span class="pip"></span>retriever</div>
-      <div class="agent-node" style="--radius:165px; animation-duration:22s; animation-delay:-14.6s;"><span class="pip"></span>router</div>
-      <div class="agent-node" style="--radius:215px; animation-duration:30s; animation-direction:reverse;"><span class="pip"></span>diff engine</div>
-      <div class="agent-node" style="--radius:215px; animation-duration:30s; animation-direction:reverse; animation-delay:-15s;"><span class="pip"></span>chat orchestrator</div>
     </div>
 
+    <!-- Mobile-Only Pipeline Flow (CSS hides on desktop) -->
     <div class="pipeline-flow" aria-label="Multi-agent pipeline structure">
       <div class="flow-node">
         <span class="pip pulse"></span>
@@ -88,7 +110,6 @@
   </div>
 
   <div class="hero-foot">
-    <p>I design and ship multi-agent AI pipelines and the messy infrastructure underneath them — from GDP-compliant document validators to semantic PDF diffing, built on Python, Azure, and a lot of Linux.</p>
     <div class="scroll-cue">Scroll ↓</div>
   </div>
 </section>

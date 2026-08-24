@@ -78,11 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', rewriteLinksForDevice);
 
   // Dynamic Orbit Core Text on Agent Node Hover
-  const coreLabel = document.querySelector('.core-label');
+  const coreLabel = document.querySelector('.circle-core-label');
   const agentNodes = document.querySelectorAll('.agent-node');
 
   if (coreLabel && agentNodes.length > 0) {
-    const defaultText = coreLabel.innerHTML;
     const agentData = {
       'validator': '<b>Validator</b>Checks GDP docs<br>for compliance',
       'retriever': '<b>Retriever</b>RAG pipelines &<br>knowledge routing',
@@ -95,20 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
       node.addEventListener('mouseenter', () => {
         const key = node.textContent.trim().toLowerCase();
         if (agentData[key]) {
-          coreLabel.style.opacity = 0;
-          setTimeout(() => {
-            coreLabel.innerHTML = agentData[key];
-            coreLabel.style.opacity = 1;
-          }, 150);
+          coreLabel.innerHTML = agentData[key];
+          coreLabel.style.opacity = 1;
         }
       });
 
       node.addEventListener('mouseleave', () => {
         coreLabel.style.opacity = 0;
-        setTimeout(() => {
-          coreLabel.innerHTML = defaultText;
-          coreLabel.style.opacity = 1;
-        }, 150);
       });
     });
   }

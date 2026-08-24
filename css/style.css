@@ -100,10 +100,13 @@ nav {
   color: var(--muted);
   position: relative;
   padding-bottom: 4px;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
 }
 
 .navlinks a:hover {
   color: var(--ink);
+  transform: translateY(-4px);
 }
 
 .navlinks a::after {
@@ -142,12 +145,14 @@ nav {
   padding: 10px 20px;
   background: transparent;
   color: var(--ink);
-  transition: background 0.15s ease, color 0.15s ease;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.15s ease, color 0.15s ease;
 }
 
 .nav-cta:hover {
   background: var(--ink);
   color: var(--paper);
+  transform: translateY(-4px);
 }
 
 .menu-btn {

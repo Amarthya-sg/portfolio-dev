@@ -667,27 +667,31 @@ section {
   /* Fullscreen Overlay Mobile Menu */
   .menu-btn {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: none;
     border: none;
     cursor: pointer;
     color: var(--ink);
     padding: 10px;
     margin-right: -10px;
-    line-height: 1;
     z-index: 101;
     width: 44px;
     height: 44px;
-    align-items: center;
-    justify-content: center;
+    gap: 4px;
   }
 
-  .menu-btn svg {
+  .menu-line {
     display: block;
+    width: 22px;
+    height: 1.5px;
+    background-color: var(--ink);
+    transition: transform 0.3s var(--ease), opacity 0.25s ease, background-color 0.3s ease;
   }
 
-  .menu-lines rect {
-    transform-origin: center;
-    transition: transform 0.4s var(--ease), opacity 0.25s ease;
+  .menu-btn[aria-expanded="true"] .menu-line {
+    background-color: var(--paper) !important;
   }
 
   .menu-btn[aria-expanded="true"] .line-top {
@@ -750,7 +754,7 @@ section {
   .navlinks.active a:nth-child(5) { transition-delay: 0.25s !important; }
 
   .navlinks a .idx {
-    display: inline;
+    display: none !important;
     font-family: 'IBM Plex Mono', monospace;
     font-style: normal;
     font-size: 11px;
@@ -1425,38 +1429,7 @@ section {
     background: var(--paper-alt) !important;
   }
   
-  /* Primary CTA Highlight */
-  .bottom-nav-card.primary-cta {
-    background-color: var(--ink) !important;
-    color: var(--paper) !important;
-  }
-  
-  .bottom-nav-card.primary-cta .title {
-    color: var(--paper) !important;
-  }
-  
-  .bottom-nav-card.primary-cta:hover {
-    background-color: var(--paper) !important;
-    border-color: var(--ink) !important;
-    color: var(--ink) !important;
-    box-shadow: 7px 7px 0px var(--ink) !important;
-    transform: translate(-2px, -2px) !important;
-  }
-  
-  .bottom-nav-card.primary-cta:hover .title {
-    color: var(--ink) !important;
-  }
-  
-  .bottom-nav-card.primary-cta:active {
-    background-color: var(--paper-alt) !important;
-    color: var(--ink) !important;
-    box-shadow: 2px 2px 0px var(--ink) !important;
-    transform: scale(0.96) !important;
-  }
-  
-  .bottom-nav-card.primary-cta:active .title {
-    color: var(--ink) !important;
-  }
+
   
   .bottom-nav-card .title {
     font-family: 'Space Grotesk', sans-serif !important;

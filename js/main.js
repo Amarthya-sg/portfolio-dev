@@ -77,33 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rewriteLinksForDevice();
   window.addEventListener('resize', rewriteLinksForDevice);
 
-  // Dynamic Orbit Core Text on Agent Node Hover
-  const coreLabel = document.querySelector('.circle-core-label');
-  const agentNodes = document.querySelectorAll('.agent-node');
 
-  if (coreLabel && agentNodes.length > 0) {
-    const agentData = {
-      'validator': '<b>Validator</b>Checks GDP docs<br>for compliance',
-      'retriever': '<b>Retriever</b>RAG pipelines &<br>knowledge routing',
-      'router': '<b>Router</b>Topic-based<br>dialog handoffs',
-      'diff engine': '<b>Diff Engine</b>Semantic PDF<br>revision compare',
-      'chat orchestrator': '<b>Orchestrator</b>Coordinating<br>multi-agent flows'
-    };
-
-    agentNodes.forEach(node => {
-      node.addEventListener('mouseenter', () => {
-        const key = node.textContent.trim().toLowerCase();
-        if (agentData[key]) {
-          coreLabel.innerHTML = agentData[key];
-          coreLabel.style.opacity = 1;
-        }
-      });
-
-      node.addEventListener('mouseleave', () => {
-        coreLabel.style.opacity = 0;
-      });
-    });
-  }
 
   // Custom Cursor Implementation
   if (window.matchMedia('(pointer: fine)').matches) {

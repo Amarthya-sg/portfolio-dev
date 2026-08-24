@@ -856,6 +856,10 @@ section {
   .hero-center-container .hero-rule { animation-delay: 0.3s; }
   .hero-center-container .hero-motto { animation-delay: 0.4s; }
 
+  .hero-eyebrow, .hero-rule, .hero-motto {
+    display: none !important;
+  }
+
   .hero-eyebrow {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10.5px;
@@ -1293,9 +1297,10 @@ section {
   .short-about.mobile-only-element {
     display: block !important;
     margin-top: 48px;
-    padding-top: 48px;
+    padding: 48px 28px 0 !important;
     border-top: 1px solid var(--border-hairline);
     width: 100%;
+    box-sizing: border-box !important;
   }
   
   .short-about p {
@@ -1324,6 +1329,9 @@ section {
     margin-top: 48px;
     margin-bottom: 48px;
     width: 100%;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+    box-sizing: border-box !important;
   }
   
   .bottom-nav-card {

@@ -838,12 +838,12 @@ section {
   }
 
   .hero-center-container {
-    flex: none !important;
+    flex: 1 !important;
     min-height: auto !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: flex-start !important;
-    padding: 80px 28px 24px !important;
+    justify-content: center !important;
+    padding: 24px 28px !important;
     text-align: left !important;
     align-items: flex-start !important;
   }
@@ -1298,7 +1298,7 @@ section {
   
   .short-about.mobile-only-element {
     display: block !important;
-    margin-top: auto !important;
+    margin-top: 0 !important;
     padding: 24px 28px 0 !important;
     border-top: 1px solid var(--border-hairline);
     width: 100%;

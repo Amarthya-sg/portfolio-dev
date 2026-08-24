@@ -1382,6 +1382,20 @@ section {
     border-top: 1px solid var(--border-hairline);
     width: 100%;
   }
+
+  /* Even spacing layout for mobile home page body */
+  body.home-page {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100dvh !important;
+    justify-content: space-between !important;
+    padding: 32px 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  body.home-page header {
+    display: none !important;
+  }
 }
 
 /* REDUCED MOTION OVERRIDES */

@@ -260,8 +260,9 @@ section {
 
 .sec-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  letter-spacing: 0.02em;
+  font-size: clamp(4.5rem, 9.5vw, 9.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   display: inline-block;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -352,6 +353,39 @@ section {
 }
 
 /* ABOUT SECTION */
+.about-pullquote {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 36px 0;
+  margin: 48px 0;
+  transform-style: preserve-3d;
+}
+
+.about-pullquote .quote-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.about-pullquote .quote-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
 .about-grid {
   display: flex;
   flex-direction: column;
@@ -361,14 +395,14 @@ section {
 .about-copy {
   column-count: 3;
   column-gap: 56px;
-  column-rule: 1px solid var(--border-hairline);
+  column-rule: 1px solid var(--ink);
   text-align: justify;
   max-width: none;
 }
 
 .about-copy p {
-  font-family: 'PT Serif', Georgia, serif;
-  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
   line-height: 1.65;
   color: var(--body-text);
   margin-bottom: 0;
@@ -376,8 +410,8 @@ section {
 }
 
 .about-copy p:first-child {
-  font-family: 'PT Serif', Georgia, serif;
-  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
   line-height: 1.65;
   color: var(--body-text);
   margin-bottom: 0;
@@ -401,7 +435,7 @@ section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   border-left: none;
-  border-top: 1px solid var(--border-hairline);
+  border-top: 1px solid var(--ink);
   padding-left: 0;
   padding-top: 40px;
   gap: 32px;
@@ -415,18 +449,19 @@ section {
 }
 
 .stack-row .name {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: var(--ink);
+  letter-spacing: 0.12em;
+  color: var(--muted);
 }
 
 .stack-row .items {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13.5px;
-  font-weight: 300;
-  color: var(--muted);
+  font-weight: 400;
+  color: var(--ink);
   text-align: left;
   max-width: none;
 }

@@ -140,10 +140,10 @@ nav {
 
 .navlinks {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 48px;
   width: auto;
-  margin: 0 auto;
+  margin: 0;
   align-items: center;
 }
 

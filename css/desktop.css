@@ -32,10 +32,11 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--paper);
 }
 
 body {
-  background-color: var(--paper);
+  background-color: transparent;
   color: var(--ink);
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 300;
@@ -671,36 +672,33 @@ section {
   transition: none; /* instant inversion */
 }
 
-/* TYPOGRAPHIC LAYOUT RAILS */
-.typo-layout {
-  display: grid !important;
-  grid-template-columns: 200px 1fr 200px !important;
-  gap: 48px !important;
-  width: 100% !important;
-  align-items: start !important;
-  margin: 0 auto !important;
-  max-width: 1600px !important;
-}
-
-.lib-column {
-  font-family: 'IBM Plex Mono', monospace !important;
-  font-size: 8px !important;
-  line-height: 1.4 !important;
-  color: var(--muted) !important;
-  text-align: justify !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  opacity: 0.18 !important; /* subtle watermark texture */
-  height: 520px !important;
+/* FULLSCREEN TYPOGRAPHIC WATERMARK BACKGROUND */
+.bg-typo-container {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -1 !important; /* render behind content */
   overflow: hidden !important;
-  word-break: break-all !important;
-  padding-top: 10px !important;
+  padding: 40px !important;
+  box-sizing: border-box !important;
   user-select: none !important;
   pointer-events: none !important;
+  opacity: 0.08 !important; /* extremely subtle background watermark text wall */
 }
 
-.hero-center-content, .main-content-wrap {
+.bg-typo-text {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 10px !important;
+  line-height: 1.45 !important;
+  color: var(--ink) !important;
+  text-align: justify !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  word-break: break-all !important;
   width: 100% !important;
+  height: 100% !important;
 }
 
 /* RESPONSIVE OVERRIDES */

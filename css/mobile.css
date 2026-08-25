@@ -1917,10 +1917,7 @@ section {
   }
 }
 
-/* TYPOGRAPHIC COLUMNS HIDING FOR MOBILE */
-.lib-column {
+/* TYPOGRAPHIC WATERMARK BACKGROUND HIDING FOR MOBILE */
+.bg-typo-container {
   display: none !important;
-}
-.typo-layout {
-  display: block !important;
 }

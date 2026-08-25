@@ -681,7 +681,7 @@ section {
   height: 100vh !important;
   z-index: -1 !important; /* render behind content */
   overflow: hidden !important;
-  padding: 40px !important;
+  padding: 0 !important;
   box-sizing: border-box !important;
   user-select: none !important;
   pointer-events: none !important;

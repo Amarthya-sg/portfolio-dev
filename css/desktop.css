@@ -685,7 +685,7 @@ section {
   box-sizing: border-box !important;
   user-select: none !important;
   pointer-events: none !important;
-  opacity: 0.08 !important; /* extremely subtle background watermark text wall */
+  opacity: 0.22 !important; /* darker typographic background watermark */
 }
 
 .bg-typo-text {

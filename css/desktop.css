@@ -351,72 +351,79 @@ section {
 
 /* ABOUT SECTION */
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .about-copy {
-  max-width: 65ch; /* cap prose lines */
+  column-count: 3;
+  column-gap: 56px;
+  column-rule: 1px solid var(--border-hairline);
+  text-align: justify;
+  max-width: none;
 }
 
 .about-copy p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'PT Serif', Georgia, serif;
   font-size: 15px;
-  font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.65;
   color: var(--body-text);
-  margin-bottom: 24px;
-  letter-spacing: 0.01em;
+  margin-bottom: 0;
+  text-indent: 1.8em;
 }
 
 .about-copy p:first-child {
+  font-family: 'PT Serif', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--body-text);
+  margin-bottom: 0;
+  text-transform: none;
+  letter-spacing: 0;
+  text-indent: 0;
+}
+
+.drop-cap-letter {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 28px;
-  font-weight: normal;
-  line-height: 1.4;
+  font-size: 80px;
+  float: left;
+  line-height: 0.75;
+  margin-top: 4px;
+  margin-right: 12px;
   color: var(--ink);
-  margin-bottom: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  font-weight: bold;
 }
 
 .stack-list {
-  display: flex;
-  flex-direction: column;
-  border-left: 1px solid var(--border-hairline);
-  padding-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-left: none;
+  border-top: 1px solid var(--border-hairline);
+  padding-left: 0;
+  padding-top: 40px;
+  gap: 32px;
 }
 
 .stack-row {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  align-items: center;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--border-hairline);
-  gap: 20px;
-}
-
-.stack-row:first-child {
-  padding-top: 0;
-}
-
-.stack-row:last-child {
-  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
 }
 
 .stack-row .name {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   color: var(--ink);
 }
 
 .stack-row .items {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13.5px;
+  font-weight: 300;
   color: var(--muted);
   text-align: left;
   max-width: none;

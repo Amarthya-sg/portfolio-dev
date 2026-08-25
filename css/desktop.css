@@ -671,6 +671,38 @@ section {
   transition: none; /* instant inversion */
 }
 
+/* TYPOGRAPHIC LAYOUT RAILS */
+.typo-layout {
+  display: grid !important;
+  grid-template-columns: 200px 1fr 200px !important;
+  gap: 48px !important;
+  width: 100% !important;
+  align-items: start !important;
+  margin: 0 auto !important;
+  max-width: 1600px !important;
+}
+
+.lib-column {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 8px !important;
+  line-height: 1.4 !important;
+  color: var(--muted) !important;
+  text-align: justify !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  opacity: 0.18 !important; /* subtle watermark texture */
+  height: 520px !important;
+  overflow: hidden !important;
+  word-break: break-all !important;
+  padding-top: 10px !important;
+  user-select: none !important;
+  pointer-events: none !important;
+}
+
+.hero-center-content, .main-content-wrap {
+  width: 100% !important;
+}
+
 /* RESPONSIVE OVERRIDES */
 
 /* REDUCED MOTION OVERRIDES */

@@ -114,7 +114,7 @@ a {
 }
 
 .wrap {
-  padding: 0 60px;
+  padding: 0 clamp(48px, 6vw, 64px);
 }
 
 /* Structural outer frame (Removed) */
@@ -134,7 +134,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 60px;
+  padding: 22px clamp(48px, 6vw, 64px);
   position: relative;
 }
 
@@ -230,7 +230,7 @@ nav {
 
 /* LAYOUT & SECTIONS */
 section {
-  padding: 80px 60px;
+  padding: 96px clamp(48px, 6vw, 64px);
   width: 100%;
   position: relative;
   flex: 1;
@@ -353,14 +353,18 @@ section {
 }
 
 /* ABOUT SECTION */
+#about .sec-head {
+  margin-bottom: 64px;
+}
+
 .about-pullquote {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 60px;
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
-  padding: 36px 0;
-  margin: 48px 0;
+  padding: 32px 0;
+  margin: 64px 0;
   transform-style: preserve-3d;
 }
 
@@ -384,6 +388,16 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--muted);
+  border-left: 1px solid var(--border);
+  padding-left: 24px;
+}
+
+.stat-label {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .about-grid {
@@ -437,7 +451,8 @@ section {
   border-left: none;
   border-top: 1px solid var(--ink);
   padding-left: 0;
-  padding-top: 40px;
+  padding-top: 32px;
+  margin-top: 64px;
   gap: 32px;
 }
 
@@ -571,7 +586,7 @@ section {
   gap: 60px;
   border-top: 1px solid var(--border);
   background: transparent;
-  padding: 40px 0;
+  padding: 64px 0;
   margin-bottom: 0;
 }
 
@@ -641,8 +656,8 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   border-top: 1px solid var(--border);
-  padding-top: 40px;
-  margin-top: 40px;
+  padding-top: 64px;
+  margin-top: 64px;
 }
 
 .edu-block h4 {
@@ -752,43 +767,7 @@ section {
   }
 }
 
-/* CUSTOM TRAILING MOUSE EFFECT */
-@media (pointer: fine) {
-  .custom-cursor {
-    display: block;
-    position: fixed;
-    top: -16px;
-    left: -16px;
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--ink);
-    background: transparent;
-    border-radius: 50% !important;
-    pointer-events: none;
-    z-index: 99999;
-    opacity: 0;
-    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
-                height 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
-                top 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
-                left 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-                background 0.25s ease,
-                opacity 0.2s ease;
-  }
 
-  .custom-cursor.hover {
-    width: 56px;
-    height: 56px;
-    top: -28px;
-    left: -28px;
-    background: rgba(10, 10, 10, 0.04);
-  }
-}
-
-@media (pointer: coarse) {
-  .custom-cursor {
-    display: none;
-  }
-}
 
 /* NATIVE PAGE VIEW TRANSITIONS */
 @view-transition {
